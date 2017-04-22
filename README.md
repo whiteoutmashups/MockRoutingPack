@@ -10,3 +10,5 @@ It comes with:
  - and 5 SAFE Web Apps for you to upload and try out!
  
  Have fun, and enjoy!! SAFE :D :D
+ 
+ (LINUX ONLY RIGHT NOW!!!)
