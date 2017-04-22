@@ -1,0 +1,702 @@
+2017-04-22T20:45:38.829Z - info: Server started
+2017-04-22T20:45:38.844Z - debug: Add event listener - error
+2017-04-22T20:45:38.845Z - debug: Add event listener - started
+2017-04-22T20:45:38.845Z - debug: Add event listener - stopped
+2017-04-22T20:45:38.845Z - debug: Add event listener - sesssion_created
+2017-04-22T20:45:38.846Z - debug: Add event listener - session_creation_failed
+2017-04-22T20:45:38.846Z - debug: Add event listener - session_removed
+2017-04-22T20:45:38.846Z - debug: Add event listener - data_uploaded
+2017-04-22T20:45:38.847Z - debug: Add event listener - data_downloaded
+2017-04-22T20:45:38.847Z - debug: Add event listener - activity_new
+2017-04-22T20:45:38.847Z - debug: Add event listener - activity_update
+2017-04-22T20:45:38.847Z - debug: Add event listener - auth_request
+2017-04-22T20:45:38.848Z - debug: Add event listener - invite_token
+2017-04-22T20:45:38.850Z - info: API server started
+2017-04-22T20:45:38.869Z - debug: FFI :: Set session handle
+2017-04-22T20:45:38.872Z - debug: FFI :: Create unregistered app
+2017-04-22T20:46:38.884Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:46:51.715Z - debug: FFI :: Set session handle
+2017-04-22T20:46:51.716Z - debug: FFI :: Revoke Anonymous App
+2017-04-22T20:46:51.756Z - debug: FFI :: Drop session handle
+2017-04-22T20:46:51.761Z - debug: FFI :: Create unregistered app
+2017-04-22T20:46:51.763Z - debug: FFI :: Get account info
+2017-04-22T20:47:10.851Z - debug: Unauthorised request :: 2713d163-d062-42e3-90b7-f992db2759dc :: Path - /0.5/auth
+2017-04-22T20:47:10.872Z - debug: Auth :: 2713d163-d062-42e3-90b7-f992db2759dc :: Authorisation request received
+2017-04-22T20:47:10.873Z - debug: Auth :: 2713d163-d062-42e3-90b7-f992db2759dc :: Requesting authorisation for {"app":{"name":"safe-browser","id":"safe-browser","version":"0.4.3","vendor":"Josh Wilson"},"permissions":["SAFE_DRIVE_ACCESS"]}
+2017-04-22T20:47:10.873Z - debug: Auth :: 2713d163-d062-42e3-90b7-f992db2759dc :: Emitting event for auth request received
+2017-04-22T20:47:12.926Z - info: Authorisation approved
+2017-04-22T20:47:12.926Z - debug: Authorisation approved :: 2713d163-d062-42e3-90b7-f992db2759dc - App Name 
+      :: safe-browser
+2017-04-22T20:47:12.929Z - debug: FFI :: Register App {"_appName":"safe-browser","_appId":"safe-browser","_version":"0.4.3","_vendorName":"Josh Wilson","_permission":{"permissionsRequested":["SAFE_DRIVE_ACCESS"]}}
+2017-04-22T20:47:13.837Z - debug: FFI :: Registered App successfully
+2017-04-22T20:47:13.838Z - debug: Auth :: 2713d163-d062-42e3-90b7-f992db2759dc :: Directory key for creating an session obtained
+2017-04-22T20:47:13.838Z - debug: Auth :: 2713d163-d062-42e3-90b7-f992db2759dc :: Creating session
+2017-04-22T20:47:13.869Z - debug: Auth :: 2713d163-d062-42e3-90b7-f992db2759dc :: Session created
+2017-04-22T20:47:14.396Z - debug: Authorised request :: d82889d8-285a-41e4-a5cf-98326b15e8a6 :: Path - /0.5/nfs/file/app/safeBrowserData.json
+2017-04-22T20:47:14.402Z - debug: Authorised request :: d82889d8-285a-41e4-a5cf-98326b15e8a6 :: Decrypted session id - wKwj2scZcCFI92xPitJij/gPKjWFOUfBWjpyONt5/Lg=
+2017-04-22T20:47:14.404Z - debug: NFS - d82889d8-285a-41e4-a5cf-98326b15e8a6 :: Get file
+2017-04-22T20:47:14.405Z - debug: NFS - d82889d8-285a-41e4-a5cf-98326b15e8a6 :: Invoking get file request
+2017-04-22T20:47:14.406Z - debug: FFI :: Get application handle
+2017-04-22T20:47:14.407Z - error: FFI :: NFS :: Get file metadata :: -1503
+2017-04-22T20:47:14.416Z - warn: API Error handling :: d82889d8-285a-41e4-a5cf-98326b15e8a6 :: Err 404 - Msg 
+        :: {"errorCode":-1503,"description":"FfiError::InvalidPath"}
+2017-04-22T20:47:14.928Z - debug: Authorised request :: 4306684e-4512-4523-9224-067c125dbf6a :: Path - /0.5/nfs/file/app/safeBrowserData.json
+2017-04-22T20:47:14.930Z - debug: Authorised request :: 4306684e-4512-4523-9224-067c125dbf6a :: Decrypted session id - wKwj2scZcCFI92xPitJij/gPKjWFOUfBWjpyONt5/Lg=
+2017-04-22T20:47:14.931Z - debug: NFS - 4306684e-4512-4523-9224-067c125dbf6a :: Get file
+2017-04-22T20:47:14.931Z - debug: NFS - 4306684e-4512-4523-9224-067c125dbf6a :: Invoking get file request
+2017-04-22T20:47:14.931Z - debug: FFI :: Get application handle
+2017-04-22T20:47:14.934Z - error: FFI :: NFS :: Get file metadata :: -1503
+2017-04-22T20:47:14.946Z - warn: API Error handling :: 4306684e-4512-4523-9224-067c125dbf6a :: Err 404 - Msg 
+        :: {"errorCode":-1503,"description":"FfiError::InvalidPath"}
+2017-04-22T20:47:15.144Z - debug: Authorised request :: 88007719-0c06-413b-b7e7-0145d8f8cc01 :: Path - /0.5/nfs/file/app/safeBrowserData.json
+2017-04-22T20:47:15.145Z - debug: Authorised request :: 88007719-0c06-413b-b7e7-0145d8f8cc01 :: Decrypted session id - wKwj2scZcCFI92xPitJij/gPKjWFOUfBWjpyONt5/Lg=
+2017-04-22T20:47:15.148Z - debug: NFS - 88007719-0c06-413b-b7e7-0145d8f8cc01 :: Create file
+2017-04-22T20:47:15.148Z - debug: NFS - 88007719-0c06-413b-b7e7-0145d8f8cc01 :: Invoking create file request 
+    - {"metadata":"","length":1625}
+2017-04-22T20:47:15.149Z - debug: FFI :: Get application handle
+2017-04-22T20:47:41.095Z - debug: Authorised request :: 76f979a4-97be-4b86-882a-069cb1bee5a9 :: Path - /auth
+2017-04-22T20:47:41.096Z - debug: Authorised request :: 76f979a4-97be-4b86-882a-069cb1bee5a9 :: Decrypted session id - undefined
+2017-04-22T20:47:41.096Z - warn: Session ID not found
+2017-04-22T20:47:41.116Z - debug: Unauthorised request :: 61fb9312-2f26-4d2e-b2c6-32985847f104 :: Path - /auth
+2017-04-22T20:47:41.119Z - debug: Auth :: 61fb9312-2f26-4d2e-b2c6-32985847f104 :: Authorisation request received
+2017-04-22T20:47:41.119Z - debug: Auth :: 61fb9312-2f26-4d2e-b2c6-32985847f104 :: Requesting authorisation for {"app":{"name":"SAFE Demo App","id":"net.maidsafe.demo_app","version":"0.6.2","vendor":"MaidSafe"},"permissions":[]}
+2017-04-22T20:47:41.119Z - debug: Auth :: 61fb9312-2f26-4d2e-b2c6-32985847f104 :: Emitting event for auth request received
+2017-04-22T20:47:42.550Z - info: Authorisation approved
+2017-04-22T20:47:42.554Z - debug: Authorisation approved :: 61fb9312-2f26-4d2e-b2c6-32985847f104 - App Name 
+      :: SAFE Demo App
+2017-04-22T20:47:42.555Z - debug: FFI :: Register App {"_appName":"SAFE Demo App","_appId":"net.maidsafe.demo_app","_version":"0.6.2","_vendorName":"MaidSafe","_permission":{"permissionsRequested":[]}}
+2017-04-22T20:47:42.715Z - debug: FFI :: Registered App successfully
+2017-04-22T20:47:42.715Z - debug: Auth :: 61fb9312-2f26-4d2e-b2c6-32985847f104 :: Directory key for creating an session obtained
+2017-04-22T20:47:42.719Z - debug: Auth :: 61fb9312-2f26-4d2e-b2c6-32985847f104 :: Creating session
+2017-04-22T20:47:42.731Z - debug: Auth :: 61fb9312-2f26-4d2e-b2c6-32985847f104 :: Session created
+2017-04-22T20:47:42.771Z - debug: Authorised request :: e541fc4a-f199-44ba-867e-3fd380f17308 :: Path - /dns
+2017-04-22T20:47:42.773Z - debug: Authorised request :: e541fc4a-f199-44ba-867e-3fd380f17308 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:47:42.776Z - debug: DNS - e541fc4a-f199-44ba-867e-3fd380f17308 :: List longnames
+2017-04-22T20:47:42.776Z - debug: DNS - e541fc4a-f199-44ba-867e-3fd380f17308 :: Invoking listLongNames
+2017-04-22T20:47:42.777Z - debug: FFI :: Get application handle
+2017-04-22T20:47:42.995Z - debug: DNS - e541fc4a-f199-44ba-867e-3fd380f17308 :: Longnames list obtained
+2017-04-22T20:47:43.076Z - debug: Authorised request :: d5bbc8d2-3209-460d-a656-69a23a2344a7 :: Path - /nfs/directory/app//
+2017-04-22T20:47:43.077Z - debug: Authorised request :: d5bbc8d2-3209-460d-a656-69a23a2344a7 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:47:43.079Z - debug: NFS - d5bbc8d2-3209-460d-a656-69a23a2344a7 :: GET directory
+2017-04-22T20:47:43.080Z - debug: NFS  - d5bbc8d2-3209-460d-a656-69a23a2344a7 :: Invoking get directory request
+2017-04-22T20:47:43.081Z - debug: FFI :: Get application handle
+2017-04-22T20:47:43.091Z - debug: NFS - d5bbc8d2-3209-460d-a656-69a23a2344a7 :: Directory obtained
+2017-04-22T20:47:43.117Z - debug: Authorised request :: fa3696d6-134b-4db6-909b-a88f68a910d0 :: Path - /nfs/directory/app/public
+2017-04-22T20:47:43.118Z - debug: Authorised request :: fa3696d6-134b-4db6-909b-a88f68a910d0 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:47:43.122Z - debug: NFS - fa3696d6-134b-4db6-909b-a88f68a910d0 :: Create directory
+2017-04-22T20:47:43.125Z - debug: NFS - fa3696d6-134b-4db6-909b-a88f68a910d0 :: Invoking create directory request - {"isPrivate":false,"userMetadata":"","metadata":""}
+2017-04-22T20:47:43.126Z - debug: FFI :: Get application handle
+2017-04-22T20:47:43.252Z - debug: Authorised request :: eccd0c40-6f1b-4ee5-872c-05d2c566b315 :: Path - /nfs/directory/app/private
+2017-04-22T20:47:43.253Z - debug: Authorised request :: eccd0c40-6f1b-4ee5-872c-05d2c566b315 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:47:43.255Z - debug: NFS - eccd0c40-6f1b-4ee5-872c-05d2c566b315 :: Create directory
+2017-04-22T20:47:43.255Z - debug: NFS - eccd0c40-6f1b-4ee5-872c-05d2c566b315 :: Invoking create directory request - {"isPrivate":true,"userMetadata":"","metadata":""}
+2017-04-22T20:47:43.255Z - debug: FFI :: Get application handle
+2017-04-22T20:47:52.147Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:47:52.148Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:47:52.149Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:47:52.152Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:48:52.146Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:48:52.147Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:48:52.147Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:48:52.148Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:49:52.147Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:49:52.147Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:49:52.148Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:49:52.149Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:50:26.777Z - debug: Authorised request :: 2b8fa1e4-6d61-47d3-927f-074858b23636 :: Path - /nfs/directory/app//public/
+2017-04-22T20:50:26.778Z - debug: Authorised request :: 2b8fa1e4-6d61-47d3-927f-074858b23636 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:26.778Z - debug: NFS - 2b8fa1e4-6d61-47d3-927f-074858b23636 :: GET directory
+2017-04-22T20:50:26.779Z - debug: NFS  - 2b8fa1e4-6d61-47d3-927f-074858b23636 :: Invoking get directory request
+2017-04-22T20:50:26.779Z - debug: FFI :: Get application handle
+2017-04-22T20:50:26.782Z - debug: NFS - 2b8fa1e4-6d61-47d3-927f-074858b23636 :: Directory obtained
+2017-04-22T20:50:47.947Z - debug: Authorised request :: e4216938-c4c1-4712-9c40-435222674247 :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages
+2017-04-22T20:50:47.948Z - debug: Authorised request :: e4216938-c4c1-4712-9c40-435222674247 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:47.950Z - debug: NFS - e4216938-c4c1-4712-9c40-435222674247 :: Create directory
+2017-04-22T20:50:47.952Z - debug: NFS - e4216938-c4c1-4712-9c40-435222674247 :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T20:50:47.952Z - debug: FFI :: Get application handle
+2017-04-22T20:50:48.067Z - debug: Authorised request :: 514d8463-b8b8-4a99-a5c0-bd0f87455616 :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets
+2017-04-22T20:50:48.068Z - debug: Authorised request :: 514d8463-b8b8-4a99-a5c0-bd0f87455616 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:48.069Z - debug: NFS - 514d8463-b8b8-4a99-a5c0-bd0f87455616 :: Create directory
+2017-04-22T20:50:48.070Z - debug: NFS - 514d8463-b8b8-4a99-a5c0-bd0f87455616 :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T20:50:48.070Z - debug: FFI :: Get application handle
+2017-04-22T20:50:48.179Z - debug: Authorised request :: 95d93673-3bc5-4f55-9c7c-b4be255b80a0 :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets/css
+2017-04-22T20:50:48.182Z - debug: Authorised request :: 95d93673-3bc5-4f55-9c7c-b4be255b80a0 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:48.184Z - debug: NFS - 95d93673-3bc5-4f55-9c7c-b4be255b80a0 :: Create directory
+2017-04-22T20:50:48.184Z - debug: NFS - 95d93673-3bc5-4f55-9c7c-b4be255b80a0 :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T20:50:48.184Z - debug: FFI :: Get application handle
+2017-04-22T20:50:48.370Z - debug: Authorised request :: 8b237ed0-63ca-4c59-8781-abb54e341cc5 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/font-awesome.min.css
+2017-04-22T20:50:48.371Z - debug: Authorised request :: 8b237ed0-63ca-4c59-8781-abb54e341cc5 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:48.379Z - debug: NFS - 8b237ed0-63ca-4c59-8781-abb54e341cc5 :: Create file
+2017-04-22T20:50:48.379Z - debug: NFS - 8b237ed0-63ca-4c59-8781-abb54e341cc5 :: Invoking create file request 
+    - {"metadata":"","length":29063}
+2017-04-22T20:50:48.379Z - debug: FFI :: Get application handle
+2017-04-22T20:50:48.596Z - debug: Authorised request :: 266b8281-b03b-45b8-857f-90ede2f68ee3 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/googleapis.css
+2017-04-22T20:50:48.597Z - debug: Authorised request :: 266b8281-b03b-45b8-857f-90ede2f68ee3 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:48.598Z - debug: NFS - 266b8281-b03b-45b8-857f-90ede2f68ee3 :: Create file
+2017-04-22T20:50:48.599Z - debug: NFS - 266b8281-b03b-45b8-857f-90ede2f68ee3 :: Invoking create file request 
+    - {"metadata":"","length":2331}
+2017-04-22T20:50:48.599Z - debug: FFI :: Get application handle
+2017-04-22T20:50:48.686Z - debug: Authorised request :: 0f345f41-c9ab-4791-9397-34def65bf2af :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/ie8.css
+2017-04-22T20:50:48.689Z - debug: Authorised request :: 0f345f41-c9ab-4791-9397-34def65bf2af :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:48.690Z - debug: NFS - 0f345f41-c9ab-4791-9397-34def65bf2af :: Create file
+2017-04-22T20:50:48.690Z - debug: NFS - 0f345f41-c9ab-4791-9397-34def65bf2af :: Invoking create file request 
+    - {"metadata":"","length":473}
+2017-04-22T20:50:48.690Z - debug: FFI :: Get application handle
+2017-04-22T20:50:48.789Z - debug: Authorised request :: 10de6ff6-e95e-4bc3-ae91-9272df36bb3a :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/ie9.css
+2017-04-22T20:50:48.790Z - debug: Authorised request :: 10de6ff6-e95e-4bc3-ae91-9272df36bb3a :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:48.790Z - debug: NFS - 10de6ff6-e95e-4bc3-ae91-9272df36bb3a :: Create file
+2017-04-22T20:50:48.790Z - debug: NFS - 10de6ff6-e95e-4bc3-ae91-9272df36bb3a :: Invoking create file request 
+    - {"metadata":"","length":383}
+2017-04-22T20:50:48.792Z - debug: FFI :: Get application handle
+2017-04-22T20:50:48.875Z - debug: Authorised request :: a0604935-5c05-4dc6-8c31-c2a27a87bf76 :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets/css/images
+2017-04-22T20:50:48.877Z - debug: Authorised request :: a0604935-5c05-4dc6-8c31-c2a27a87bf76 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:48.880Z - debug: NFS - a0604935-5c05-4dc6-8c31-c2a27a87bf76 :: Create directory
+2017-04-22T20:50:48.881Z - debug: NFS - a0604935-5c05-4dc6-8c31-c2a27a87bf76 :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T20:50:48.881Z - debug: FFI :: Get application handle
+2017-04-22T20:50:48.995Z - debug: Authorised request :: e02c6f73-c2f0-4cfb-9648-84dc6a05e3ce :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/bg.jpg
+2017-04-22T20:50:48.996Z - debug: Authorised request :: e02c6f73-c2f0-4cfb-9648-84dc6a05e3ce :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:48.999Z - debug: NFS - e02c6f73-c2f0-4cfb-9648-84dc6a05e3ce :: Create file
+2017-04-22T20:50:48.999Z - debug: NFS - e02c6f73-c2f0-4cfb-9648-84dc6a05e3ce :: Invoking create file request 
+    - {"metadata":"","length":598204}
+2017-04-22T20:50:49.000Z - debug: FFI :: Get application handle
+2017-04-22T20:50:49.377Z - debug: Authorised request :: a56d00e4-73bb-4939-b9fa-10b7cb68620d :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets/css/images/ie
+2017-04-22T20:50:49.378Z - debug: Authorised request :: a56d00e4-73bb-4939-b9fa-10b7cb68620d :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:49.380Z - debug: NFS - a56d00e4-73bb-4939-b9fa-10b7cb68620d :: Create directory
+2017-04-22T20:50:49.380Z - debug: NFS - a56d00e4-73bb-4939-b9fa-10b7cb68620d :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T20:50:49.380Z - debug: FFI :: Get application handle
+2017-04-22T20:50:49.569Z - debug: Authorised request :: ea18e37c-ccd4-4645-9159-7d17c24db89f :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/ie/footer.png
+2017-04-22T20:50:49.571Z - debug: Authorised request :: ea18e37c-ccd4-4645-9159-7d17c24db89f :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:49.571Z - debug: NFS - ea18e37c-ccd4-4645-9159-7d17c24db89f :: Create file
+2017-04-22T20:50:49.572Z - debug: NFS - ea18e37c-ccd4-4645-9159-7d17c24db89f :: Invoking create file request 
+    - {"metadata":"","length":424}
+2017-04-22T20:50:49.572Z - debug: FFI :: Get application handle
+2017-04-22T20:50:49.706Z - debug: Authorised request :: 1aee2f31-1cbb-4766-9f10-e3d8478b720d :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/ie/footer.svg
+2017-04-22T20:50:49.710Z - debug: Authorised request :: 1aee2f31-1cbb-4766-9f10-e3d8478b720d :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:49.711Z - debug: NFS - 1aee2f31-1cbb-4766-9f10-e3d8478b720d :: Create file
+2017-04-22T20:50:49.711Z - debug: NFS - 1aee2f31-1cbb-4766-9f10-e3d8478b720d :: Invoking create file request 
+    - {"metadata":"","length":432}
+2017-04-22T20:50:49.711Z - debug: FFI :: Get application handle
+2017-04-22T20:50:49.858Z - debug: Authorised request :: b5dbc784-ec4b-42d2-babe-cae87c4d1602 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/overlay-pattern.png
+2017-04-22T20:50:49.860Z - debug: Authorised request :: b5dbc784-ec4b-42d2-babe-cae87c4d1602 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:49.861Z - debug: NFS - b5dbc784-ec4b-42d2-babe-cae87c4d1602 :: Create file
+2017-04-22T20:50:49.861Z - debug: NFS - b5dbc784-ec4b-42d2-babe-cae87c4d1602 :: Invoking create file request 
+    - {"metadata":"","length":13892}
+2017-04-22T20:50:49.862Z - debug: FFI :: Get application handle
+2017-04-22T20:50:50.170Z - debug: Authorised request :: 6b3b8c78-98f8-437a-b968-5b313372d299 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/overlay.svg
+2017-04-22T20:50:50.175Z - debug: Authorised request :: 6b3b8c78-98f8-437a-b968-5b313372d299 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:50.175Z - debug: NFS - 6b3b8c78-98f8-437a-b968-5b313372d299 :: Create file
+2017-04-22T20:50:50.175Z - debug: NFS - 6b3b8c78-98f8-437a-b968-5b313372d299 :: Invoking create file request 
+    - {"metadata":"","length":785}
+2017-04-22T20:50:50.177Z - debug: FFI :: Get application handle
+2017-04-22T20:50:50.307Z - debug: Authorised request :: 5f434c47-71ec-4737-8550-4041a5a9c588 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/main.css
+2017-04-22T20:50:50.308Z - debug: Authorised request :: 5f434c47-71ec-4737-8550-4041a5a9c588 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:50.309Z - debug: NFS - 5f434c47-71ec-4737-8550-4041a5a9c588 :: Create file
+2017-04-22T20:50:50.310Z - debug: NFS - 5f434c47-71ec-4737-8550-4041a5a9c588 :: Invoking create file request 
+    - {"metadata":"","length":24343}
+2017-04-22T20:50:50.310Z - debug: FFI :: Get application handle
+2017-04-22T20:50:50.630Z - debug: Authorised request :: 5b51a08f-2a53-47e4-826e-c77bc3ee58a6 :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets/fonts
+2017-04-22T20:50:50.632Z - debug: Authorised request :: 5b51a08f-2a53-47e4-826e-c77bc3ee58a6 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:50.633Z - debug: NFS - 5b51a08f-2a53-47e4-826e-c77bc3ee58a6 :: Create directory
+2017-04-22T20:50:50.633Z - debug: NFS - 5b51a08f-2a53-47e4-826e-c77bc3ee58a6 :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T20:50:50.633Z - debug: FFI :: Get application handle
+2017-04-22T20:50:50.848Z - debug: Authorised request :: d557a974-f315-4cfd-bd95-41f82f946eb1 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/fonts/FontAwesome.otf
+2017-04-22T20:50:50.849Z - debug: Authorised request :: d557a974-f315-4cfd-bd95-41f82f946eb1 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:50.849Z - debug: NFS - d557a974-f315-4cfd-bd95-41f82f946eb1 :: Create file
+2017-04-22T20:50:50.850Z - debug: NFS - d557a974-f315-4cfd-bd95-41f82f946eb1 :: Invoking create file request 
+    - {"metadata":"","length":124988}
+2017-04-22T20:50:50.850Z - debug: FFI :: Get application handle
+2017-04-22T20:50:51.201Z - debug: Authorised request :: fb0a8753-e40c-4cbe-bc62-35ff1f8db5fb :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/fonts/fontawesome-webfont.eot
+2017-04-22T20:50:51.203Z - debug: Authorised request :: fb0a8753-e40c-4cbe-bc62-35ff1f8db5fb :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:51.204Z - debug: NFS - fb0a8753-e40c-4cbe-bc62-35ff1f8db5fb :: Create file
+2017-04-22T20:50:51.205Z - debug: NFS - fb0a8753-e40c-4cbe-bc62-35ff1f8db5fb :: Invoking create file request 
+    - {"metadata":"","length":76518}
+2017-04-22T20:50:51.206Z - debug: FFI :: Get application handle
+2017-04-22T20:50:51.597Z - debug: Authorised request :: 745d0fcc-1d87-4e91-bab4-0db7d84e3935 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/fonts/fontawesome-webfont.svg
+2017-04-22T20:50:51.598Z - debug: Authorised request :: 745d0fcc-1d87-4e91-bab4-0db7d84e3935 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:51.600Z - debug: NFS - 745d0fcc-1d87-4e91-bab4-0db7d84e3935 :: Create file
+2017-04-22T20:50:51.601Z - debug: NFS - 745d0fcc-1d87-4e91-bab4-0db7d84e3935 :: Invoking create file request 
+    - {"metadata":"","length":391622}
+2017-04-22T20:50:51.601Z - debug: FFI :: Get application handle
+2017-04-22T20:50:51.992Z - debug: Authorised request :: 45fa456c-1c66-4505-9be6-612afd0c721f :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/fonts/fontawesome-webfont.ttf
+2017-04-22T20:50:51.993Z - debug: Authorised request :: 45fa456c-1c66-4505-9be6-612afd0c721f :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:51.994Z - debug: NFS - 45fa456c-1c66-4505-9be6-612afd0c721f :: Create file
+2017-04-22T20:50:51.994Z - debug: NFS - 45fa456c-1c66-4505-9be6-612afd0c721f :: Invoking create file request 
+    - {"metadata":"","length":152796}
+2017-04-22T20:50:51.995Z - debug: FFI :: Get application handle
+2017-04-22T20:50:52.146Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:50:52.156Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:50:52.156Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:50:52.157Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:50:52.386Z - debug: Authorised request :: a9e7e8f3-885a-4979-9a32-1b76961275f1 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/fonts/fontawesome-webfont.woff
+2017-04-22T20:50:52.387Z - debug: Authorised request :: a9e7e8f3-885a-4979-9a32-1b76961275f1 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:52.387Z - debug: NFS - a9e7e8f3-885a-4979-9a32-1b76961275f1 :: Create file
+2017-04-22T20:50:52.387Z - debug: NFS - a9e7e8f3-885a-4979-9a32-1b76961275f1 :: Invoking create file request 
+    - {"metadata":"","length":90412}
+2017-04-22T20:50:52.387Z - debug: FFI :: Get application handle
+2017-04-22T20:50:52.801Z - debug: Authorised request :: c82c4edf-7dd0-4983-8d67-e411415466fe :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/fonts/fontawesome-webfont.woff2
+2017-04-22T20:50:52.802Z - debug: Authorised request :: c82c4edf-7dd0-4983-8d67-e411415466fe :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:52.802Z - debug: NFS - c82c4edf-7dd0-4983-8d67-e411415466fe :: Create file
+2017-04-22T20:50:52.803Z - debug: NFS - c82c4edf-7dd0-4983-8d67-e411415466fe :: Invoking create file request 
+    - {"metadata":"","length":71896}
+2017-04-22T20:50:52.803Z - debug: FFI :: Get application handle
+2017-04-22T20:50:53.204Z - debug: Authorised request :: f5164ce0-85b0-48ed-a8d8-f05fd7cb571a :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets/js
+2017-04-22T20:50:53.205Z - debug: Authorised request :: f5164ce0-85b0-48ed-a8d8-f05fd7cb571a :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:53.206Z - debug: NFS - f5164ce0-85b0-48ed-a8d8-f05fd7cb571a :: Create directory
+2017-04-22T20:50:53.206Z - debug: NFS - f5164ce0-85b0-48ed-a8d8-f05fd7cb571a :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T20:50:53.206Z - debug: FFI :: Get application handle
+2017-04-22T20:50:53.437Z - debug: Authorised request :: 3e019d10-222c-49d7-b6b1-7928cc6a27cb :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets/js/ie
+2017-04-22T20:50:53.438Z - debug: Authorised request :: 3e019d10-222c-49d7-b6b1-7928cc6a27cb :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:53.439Z - debug: NFS - 3e019d10-222c-49d7-b6b1-7928cc6a27cb :: Create directory
+2017-04-22T20:50:53.439Z - debug: NFS - 3e019d10-222c-49d7-b6b1-7928cc6a27cb :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T20:50:53.439Z - debug: FFI :: Get application handle
+2017-04-22T20:50:53.667Z - debug: Authorised request :: b8adb18f-c9a4-4c3c-a46c-549621202237 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/js/ie/html5shiv.js
+2017-04-22T20:50:53.671Z - debug: Authorised request :: b8adb18f-c9a4-4c3c-a46c-549621202237 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:53.671Z - debug: NFS - b8adb18f-c9a4-4c3c-a46c-549621202237 :: Create file
+2017-04-22T20:50:53.672Z - debug: NFS - b8adb18f-c9a4-4c3c-a46c-549621202237 :: Invoking create file request 
+    - {"metadata":"","length":2380}
+2017-04-22T20:50:53.672Z - debug: FFI :: Get application handle
+2017-04-22T20:50:53.840Z - debug: Authorised request :: 852b1dea-fa3f-40d3-828e-78d873b3ed25 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/js/ie/PIE.htc
+2017-04-22T20:50:53.841Z - debug: Authorised request :: 852b1dea-fa3f-40d3-828e-78d873b3ed25 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:53.842Z - debug: NFS - 852b1dea-fa3f-40d3-828e-78d873b3ed25 :: Create file
+2017-04-22T20:50:53.842Z - debug: NFS - 852b1dea-fa3f-40d3-828e-78d873b3ed25 :: Invoking create file request 
+    - {"metadata":"","length":41041}
+2017-04-22T20:50:53.842Z - debug: FFI :: Get application handle
+2017-04-22T20:50:54.214Z - debug: Authorised request :: c49cfbc2-2f43-4b4e-b60d-5bf07488c11b :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/js/ie/respond.min.js
+2017-04-22T20:50:54.216Z - debug: Authorised request :: c49cfbc2-2f43-4b4e-b60d-5bf07488c11b :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:54.217Z - debug: NFS - c49cfbc2-2f43-4b4e-b60d-5bf07488c11b :: Create file
+2017-04-22T20:50:54.217Z - debug: NFS - c49cfbc2-2f43-4b4e-b60d-5bf07488c11b :: Invoking create file request 
+    - {"metadata":"","length":4591}
+2017-04-22T20:50:54.217Z - debug: FFI :: Get application handle
+2017-04-22T20:50:54.565Z - debug: Authorised request :: c9c5f0e4-2137-4d48-a20b-055e8c88e35f :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/bg.jpg
+2017-04-22T20:50:54.566Z - debug: Authorised request :: c9c5f0e4-2137-4d48-a20b-055e8c88e35f :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:54.567Z - debug: NFS - c9c5f0e4-2137-4d48-a20b-055e8c88e35f :: Create file
+2017-04-22T20:50:54.567Z - debug: NFS - c9c5f0e4-2137-4d48-a20b-055e8c88e35f :: Invoking create file request 
+    - {"metadata":"","length":598204}
+2017-04-22T20:50:54.568Z - debug: FFI :: Get application handle
+2017-04-22T20:50:55.057Z - debug: Authorised request :: 7cae077e-d07b-435e-834b-d7ef3a72df92 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/favicon2.png
+2017-04-22T20:50:55.059Z - debug: Authorised request :: 7cae077e-d07b-435e-834b-d7ef3a72df92 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:55.059Z - debug: NFS - 7cae077e-d07b-435e-834b-d7ef3a72df92 :: Create file
+2017-04-22T20:50:55.059Z - debug: NFS - 7cae077e-d07b-435e-834b-d7ef3a72df92 :: Invoking create file request 
+    - {"metadata":"","length":38565}
+2017-04-22T20:50:55.060Z - debug: FFI :: Get application handle
+2017-04-22T20:50:55.463Z - debug: Authorised request :: 6bf01c56-1cc9-4785-85a4-dd4b099cc14c :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/index.html
+2017-04-22T20:50:55.463Z - debug: Authorised request :: 6bf01c56-1cc9-4785-85a4-dd4b099cc14c :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:55.464Z - debug: NFS - 6bf01c56-1cc9-4785-85a4-dd4b099cc14c :: Create file
+2017-04-22T20:50:55.464Z - debug: NFS - 6bf01c56-1cc9-4785-85a4-dd4b099cc14c :: Invoking create file request 
+    - {"metadata":"","length":6674}
+2017-04-22T20:50:55.464Z - debug: FFI :: Get application handle
+2017-04-22T20:50:55.837Z - debug: Authorised request :: d1887167-c957-4a98-bb14-ce79bc020864 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/README.md
+2017-04-22T20:50:55.840Z - debug: Authorised request :: d1887167-c957-4a98-bb14-ce79bc020864 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:55.841Z - debug: NFS - d1887167-c957-4a98-bb14-ce79bc020864 :: Create file
+2017-04-22T20:50:55.842Z - debug: NFS - d1887167-c957-4a98-bb14-ce79bc020864 :: Invoking create file request 
+    - {"metadata":"","length":652}
+2017-04-22T20:50:55.842Z - debug: FFI :: Get application handle
+2017-04-22T20:50:55.994Z - debug: Authorised request :: 937ff425-0f6a-4e99-813d-4607869fecfb :: Path - /nfs/directory/app//public/
+2017-04-22T20:50:55.995Z - debug: Authorised request :: 937ff425-0f6a-4e99-813d-4607869fecfb :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:50:55.996Z - debug: NFS - 937ff425-0f6a-4e99-813d-4607869fecfb :: GET directory
+2017-04-22T20:50:55.997Z - debug: NFS  - 937ff425-0f6a-4e99-813d-4607869fecfb :: Invoking get directory request
+2017-04-22T20:50:55.997Z - debug: FFI :: Get application handle
+2017-04-22T20:50:56.002Z - debug: NFS - 937ff425-0f6a-4e99-813d-4607869fecfb :: Directory obtained
+2017-04-22T20:51:04.982Z - debug: Authorised request :: b90ef5b8-de46-448f-8844-8adbfb4c8d34 :: Path - /dns/upload
+2017-04-22T20:51:04.983Z - debug: Authorised request :: b90ef5b8-de46-448f-8844-8adbfb4c8d34 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:51:04.987Z - debug: DNS - b90ef5b8-de46-448f-8844-8adbfb4c8d34 :: Create Public Id
+2017-04-22T20:51:04.988Z - debug: DNS - b90ef5b8-de46-448f-8844-8adbfb4c8d34 :: Invoking createPublicId API for upload
+2017-04-22T20:51:05.002Z - debug: FFI :: Get application handle
+2017-04-22T20:51:05.257Z - debug: DNS - b90ef5b8-de46-448f-8844-8adbfb4c8d34 :: Public Id created
+2017-04-22T20:51:05.309Z - debug: Authorised request :: 2c9ef528-db48-4610-9664-88d65b112efd :: Path - /dns/upload
+2017-04-22T20:51:05.311Z - debug: Authorised request :: 2c9ef528-db48-4610-9664-88d65b112efd :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:51:05.313Z - debug: DNS - 2c9ef528-db48-4610-9664-88d65b112efd :: List service
+2017-04-22T20:51:05.313Z - debug: DNS - 2c9ef528-db48-4610-9664-88d65b112efd :: Invoking listServices API for upload
+2017-04-22T20:51:05.314Z - debug: FFI :: Get application handle
+2017-04-22T20:51:05.318Z - debug: DNS - 2c9ef528-db48-4610-9664-88d65b112efd :: Service list obtained
+2017-04-22T20:51:11.223Z - debug: Authorised request :: 9949f3c7-91cd-43b3-a0a8-9fdb4939618c :: Path - /nfs/directory/app//public/
+2017-04-22T20:51:11.224Z - debug: Authorised request :: 9949f3c7-91cd-43b3-a0a8-9fdb4939618c :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:51:11.225Z - debug: NFS - 9949f3c7-91cd-43b3-a0a8-9fdb4939618c :: GET directory
+2017-04-22T20:51:11.226Z - debug: NFS  - 9949f3c7-91cd-43b3-a0a8-9fdb4939618c :: Invoking get directory request
+2017-04-22T20:51:11.226Z - debug: FFI :: Get application handle
+2017-04-22T20:51:11.230Z - debug: NFS - 9949f3c7-91cd-43b3-a0a8-9fdb4939618c :: Directory obtained
+2017-04-22T20:51:14.890Z - debug: Authorised request :: 562ed4bc-80ff-4ebe-97c3-34f5ec2db019 :: Path - /dns
+2017-04-22T20:51:14.891Z - debug: Authorised request :: 562ed4bc-80ff-4ebe-97c3-34f5ec2db019 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:51:14.896Z - debug: DNS - 562ed4bc-80ff-4ebe-97c3-34f5ec2db019 :: Add Service
+2017-04-22T20:51:14.897Z - debug: DNS - 562ed4bc-80ff-4ebe-97c3-34f5ec2db019 :: Invoking add service API for {"longName":"upload","serviceName":"wom","serviceHomeDirPath":"/public/UPLOADTEST-gh-pages/","rootPath":"app"}
+2017-04-22T20:51:14.897Z - debug: FFI :: Get application handle
+2017-04-22T20:51:14.898Z - debug: DNS - 562ed4bc-80ff-4ebe-97c3-34f5ec2db019 :: Service added
+2017-04-22T20:51:16.578Z - debug: Authorised request :: 68420d16-ce6f-4b6f-97c4-e1a0bfde55c5 :: Path - /dns/upload
+2017-04-22T20:51:16.579Z - debug: Authorised request :: 68420d16-ce6f-4b6f-97c4-e1a0bfde55c5 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:51:16.580Z - debug: DNS - 68420d16-ce6f-4b6f-97c4-e1a0bfde55c5 :: List service
+2017-04-22T20:51:16.580Z - debug: DNS - 68420d16-ce6f-4b6f-97c4-e1a0bfde55c5 :: Invoking listServices API for upload
+2017-04-22T20:51:16.581Z - debug: FFI :: Get application handle
+2017-04-22T20:51:16.587Z - debug: DNS - 68420d16-ce6f-4b6f-97c4-e1a0bfde55c5 :: Service list obtained
+2017-04-22T20:51:16.603Z - debug: Authorised request :: 34842f0e-7e51-495e-a446-6287269ed9b6 :: Path - /dns/wom/upload
+2017-04-22T20:51:16.604Z - debug: Authorised request :: 34842f0e-7e51-495e-a446-6287269ed9b6 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:51:16.607Z - debug: DNS - 34842f0e-7e51-495e-a446-6287269ed9b6 :: Get home directory
+2017-04-22T20:51:16.608Z - debug: DNS - Invoking Get home directory API for upload, wom
+2017-04-22T20:51:16.609Z - debug: FFI :: Get application handle
+2017-04-22T20:51:16.616Z - debug: DNS - 34842f0e-7e51-495e-a446-6287269ed9b6 :: Home directory obtained
+2017-04-22T20:51:24.266Z - debug: Unauthorised request :: 342ac104-b68a-40a3-8572-a24dd0c01cba :: Path - /dns/wom/upload/index.html
+2017-04-22T20:51:24.270Z - debug: DNS - 342ac104-b68a-40a3-8572-a24dd0c01cba :: Get file
+2017-04-22T20:51:24.271Z - debug: FFI :: Get application handle
+2017-04-22T20:51:24.274Z - debug: DNS - 342ac104-b68a-40a3-8572-a24dd0c01cba :: Ready to stream file for range 0 - 6674 / 6674
+2017-04-22T20:51:24.278Z - debug: FFI :: Get application handle
+2017-04-22T20:51:24.879Z - debug: Unauthorised request :: 57e67211-045f-4765-a6dc-35b7b9123f8e :: Path - /dns/wom/upload/assets%2Fcss%2Fmain.css
+2017-04-22T20:51:24.881Z - debug: DNS - 57e67211-045f-4765-a6dc-35b7b9123f8e :: Get file
+2017-04-22T20:51:24.881Z - debug: FFI :: Get application handle
+2017-04-22T20:51:24.884Z - debug: DNS - 57e67211-045f-4765-a6dc-35b7b9123f8e :: Ready to stream file for range 0 - 24343 / 24343
+2017-04-22T20:51:24.886Z - debug: FFI :: Get application handle
+2017-04-22T20:51:24.930Z - debug: Unauthorised request :: 09e36de2-70ab-4988-8928-ca0c3918f989 :: Path - /dns/wom/upload/assets%2Fcss%2Fgoogleapis.css
+2017-04-22T20:51:24.931Z - debug: DNS - 09e36de2-70ab-4988-8928-ca0c3918f989 :: Get file
+2017-04-22T20:51:24.932Z - debug: FFI :: Get application handle
+2017-04-22T20:51:24.933Z - debug: Unauthorised request :: 9c7a443d-b8a1-4694-b795-0f99aff25c1f :: Path - /dns/wom/upload/assets%2Fcss%2Ffont-awesome.min.css
+2017-04-22T20:51:24.933Z - debug: DNS - 9c7a443d-b8a1-4694-b795-0f99aff25c1f :: Get file
+2017-04-22T20:51:24.934Z - debug: FFI :: Get application handle
+2017-04-22T20:51:24.935Z - debug: DNS - 09e36de2-70ab-4988-8928-ca0c3918f989 :: Ready to stream file for range 0 - 2331 / 2331
+2017-04-22T20:51:24.936Z - debug: FFI :: Get application handle
+2017-04-22T20:51:24.937Z - debug: DNS - 9c7a443d-b8a1-4694-b795-0f99aff25c1f :: Ready to stream file for range 0 - 29063 / 29063
+2017-04-22T20:51:24.937Z - debug: FFI :: Get application handle
+2017-04-22T20:51:24.995Z - debug: Unauthorised request :: e0a23db2-06af-466a-8a90-89301938b8d3 :: Path - /dns/wom/upload/assets%2Fcss%2Fimages%2Fbg.jpg
+2017-04-22T20:51:24.996Z - debug: DNS - e0a23db2-06af-466a-8a90-89301938b8d3 :: Get file
+2017-04-22T20:51:24.998Z - debug: FFI :: Get application handle
+2017-04-22T20:51:25.000Z - debug: DNS - e0a23db2-06af-466a-8a90-89301938b8d3 :: Ready to stream file for range 0 - 598204 / 598204
+2017-04-22T20:51:25.001Z - debug: FFI :: Get application handle
+2017-04-22T20:51:25.003Z - debug: Unauthorised request :: ec94f61e-a656-46b6-9e3f-7382785ce8fe :: Path - /dns/wom/upload/assets%2Fcss%2Fimages%2Foverlay-pattern.png
+2017-04-22T20:51:25.004Z - debug: DNS - ec94f61e-a656-46b6-9e3f-7382785ce8fe :: Get file
+2017-04-22T20:51:25.005Z - debug: FFI :: Get application handle
+2017-04-22T20:51:25.007Z - debug: Unauthorised request :: a2c18866-8319-413e-baa6-538d7c8321c6 :: Path - /dns/wom/upload/assets%2Fcss%2Fimages%2Foverlay.svg
+2017-04-22T20:51:25.008Z - debug: DNS - a2c18866-8319-413e-baa6-538d7c8321c6 :: Get file
+2017-04-22T20:51:25.009Z - debug: FFI :: Get application handle
+2017-04-22T20:51:25.036Z - debug: DNS - ec94f61e-a656-46b6-9e3f-7382785ce8fe :: Ready to stream file for range 0 - 13892 / 13892
+2017-04-22T20:51:25.037Z - debug: FFI :: Get application handle
+2017-04-22T20:51:25.039Z - debug: DNS - a2c18866-8319-413e-baa6-538d7c8321c6 :: Ready to stream file for range 0 - 785 / 785
+2017-04-22T20:51:25.039Z - debug: FFI :: Get application handle
+2017-04-22T20:51:25.372Z - debug: Unauthorised request :: b3aad958-8017-4c26-9779-0f908ab749a5 :: Path - /dns/wom/upload/favicon2.png
+2017-04-22T20:51:25.373Z - debug: DNS - b3aad958-8017-4c26-9779-0f908ab749a5 :: Get file
+2017-04-22T20:51:25.374Z - debug: FFI :: Get application handle
+2017-04-22T20:51:25.376Z - debug: DNS - b3aad958-8017-4c26-9779-0f908ab749a5 :: Ready to stream file for range 0 - 38565 / 38565
+2017-04-22T20:51:25.376Z - debug: FFI :: Get application handle
+2017-04-22T20:51:26.174Z - debug: Authorised request :: e6b4501f-9547-465b-8b5f-68ad861c769d :: Path - /0.5/nfs/file/app/safeBrowserData.json
+2017-04-22T20:51:26.176Z - debug: Authorised request :: e6b4501f-9547-465b-8b5f-68ad861c769d :: Decrypted session id - wKwj2scZcCFI92xPitJij/gPKjWFOUfBWjpyONt5/Lg=
+2017-04-22T20:51:26.177Z - debug: NFS - e6b4501f-9547-465b-8b5f-68ad861c769d :: Get file
+2017-04-22T20:51:26.177Z - debug: NFS - e6b4501f-9547-465b-8b5f-68ad861c769d :: Invoking get file request
+2017-04-22T20:51:26.178Z - debug: FFI :: Get application handle
+2017-04-22T20:51:26.185Z - debug: NFS - e6b4501f-9547-465b-8b5f-68ad861c769d :: File metadata for reading - {"name":"safeBrowserData.json","metadata":"","size":1625,"createdOn":"2017-04-22T20:47:15.151Z","modifiedOn":"2017-04-22T20:47:15.157Z"}
+2017-04-22T20:51:26.186Z - debug: NFS - e6b4501f-9547-465b-8b5f-68ad861c769d :: Ready to stream file for range 0 - 1625 / 1625
+2017-04-22T20:51:26.191Z - debug: FFI :: Get application handle
+2017-04-22T20:51:26.259Z - debug: Authorised request :: bb92a2bc-1588-4e80-a8eb-14c1c32e1e17 :: Path - /0.5/nfs/file/app/safeBrowserData.json
+2017-04-22T20:51:26.260Z - debug: Authorised request :: bb92a2bc-1588-4e80-a8eb-14c1c32e1e17 :: Decrypted session id - wKwj2scZcCFI92xPitJij/gPKjWFOUfBWjpyONt5/Lg=
+2017-04-22T20:51:26.261Z - debug: NFS - bb92a2bc-1588-4e80-a8eb-14c1c32e1e17 :: Delete file
+2017-04-22T20:51:26.261Z - debug: NFS - bb92a2bc-1588-4e80-a8eb-14c1c32e1e17 :: Invoking delete file request
+2017-04-22T20:51:26.262Z - debug: FFI :: Get application handle
+2017-04-22T20:51:26.510Z - debug: Authorised request :: 161812c4-e81a-434c-9d7f-f683e73eaa5d :: Path - /0.5/nfs/file/app/safeBrowserData.json
+2017-04-22T20:51:26.512Z - debug: Authorised request :: 161812c4-e81a-434c-9d7f-f683e73eaa5d :: Decrypted session id - wKwj2scZcCFI92xPitJij/gPKjWFOUfBWjpyONt5/Lg=
+2017-04-22T20:51:26.513Z - debug: NFS - 161812c4-e81a-434c-9d7f-f683e73eaa5d :: Create file
+2017-04-22T20:51:26.513Z - debug: NFS - 161812c4-e81a-434c-9d7f-f683e73eaa5d :: Invoking create file request 
+    - {"metadata":"","length":2185}
+2017-04-22T20:51:26.513Z - debug: FFI :: Get application handle
+2017-04-22T20:51:30.859Z - debug: Authorised request :: 4e40a99f-1efd-4b56-bddb-5199f7fef316 :: Path - /0.5/auth
+2017-04-22T20:51:30.859Z - debug: Authorised request :: 4e40a99f-1efd-4b56-bddb-5199f7fef316 :: Decrypted session id - undefined
+2017-04-22T20:51:30.859Z - warn: Session ID not found
+2017-04-22T20:51:31.015Z - debug: Unauthorised request :: b43c1a46-4452-48f6-a5f9-16c1d60331ae :: Path - /0.5/auth
+2017-04-22T20:51:31.017Z - debug: Auth :: b43c1a46-4452-48f6-a5f9-16c1d60331ae :: Authorisation request received
+2017-04-22T20:51:31.018Z - debug: Auth :: b43c1a46-4452-48f6-a5f9-16c1d60331ae :: Requesting authorisation for {"app":{"name":"SecretChat by SAFE-FS","id":"Secret1","version":"0.0.1","vendor":"safe://wom.upload/"},"permissions":["SAFE_DRIVE_ACCESS"]}
+2017-04-22T20:51:31.018Z - debug: Auth :: b43c1a46-4452-48f6-a5f9-16c1d60331ae :: Emitting event for auth request received
+2017-04-22T20:51:31.958Z - info: Authorisation approved
+2017-04-22T20:51:31.958Z - debug: Authorisation approved :: b43c1a46-4452-48f6-a5f9-16c1d60331ae - App Name 
+      :: SecretChat by SAFE-FS
+2017-04-22T20:51:31.959Z - debug: FFI :: Register App {"_appName":"SecretChat by SAFE-FS","_appId":"Secret1","_version":"0.0.1","_vendorName":"safe://wom.upload/","_permission":{"permissionsRequested":["SAFE_DRIVE_ACCESS"]}}
+2017-04-22T20:51:32.301Z - debug: FFI :: Registered App successfully
+2017-04-22T20:51:32.303Z - debug: Auth :: b43c1a46-4452-48f6-a5f9-16c1d60331ae :: Directory key for creating an session obtained
+2017-04-22T20:51:32.303Z - debug: Auth :: b43c1a46-4452-48f6-a5f9-16c1d60331ae :: Creating session
+2017-04-22T20:51:32.336Z - debug: Auth :: b43c1a46-4452-48f6-a5f9-16c1d60331ae :: Session created
+2017-04-22T20:51:32.361Z - debug: Authorised request :: c9bd9871-f261-455d-8e31-b0c49597ae36 :: Path - /0.5/nfs/file/app/CURRENTCHATFILE
+2017-04-22T20:51:32.362Z - debug: Authorised request :: c9bd9871-f261-455d-8e31-b0c49597ae36 :: Decrypted session id - ACt4dlsf3bhGZ2Lf4xOMRZHAeM2PYCxIhbQK/fZie+Y=
+2017-04-22T20:51:32.363Z - debug: NFS - c9bd9871-f261-455d-8e31-b0c49597ae36 :: Get file
+2017-04-22T20:51:32.363Z - debug: NFS - c9bd9871-f261-455d-8e31-b0c49597ae36 :: Invoking get file request
+2017-04-22T20:51:32.364Z - debug: FFI :: Get application handle
+2017-04-22T20:51:32.365Z - error: FFI :: NFS :: Get file metadata :: -1503
+2017-04-22T20:51:32.369Z - warn: API Error handling :: c9bd9871-f261-455d-8e31-b0c49597ae36 :: Err 404 - Msg 
+        :: {"errorCode":-1503,"description":"FfiError::InvalidPath"}
+2017-04-22T20:51:51.764Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:51:51.765Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:51:51.766Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:51:51.766Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:52:51.764Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:52:51.765Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:52:51.765Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:52:51.769Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:53:52.146Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:53:52.147Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:53:52.147Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:53:52.148Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:54:52.146Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:54:52.147Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:54:52.147Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:54:52.148Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:55:52.147Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:55:52.148Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:55:52.150Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:55:52.151Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:56:52.146Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:56:52.147Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:56:52.147Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:56:52.148Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:57:52.146Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:57:52.147Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:57:52.148Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:57:52.148Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:58:52.146Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:58:52.147Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:58:52.147Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:58:52.149Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:59:52.146Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T20:59:52.147Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T20:59:52.148Z - debug: Authorised request :: b86edd6f-cb83-4bfd-bd20-71b23dcf1343 :: Path - /nfs/directory/app//public/
+2017-04-22T20:59:52.149Z - debug: Authorised request :: b86edd6f-cb83-4bfd-bd20-71b23dcf1343 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T20:59:52.150Z - debug: NFS - b86edd6f-cb83-4bfd-bd20-71b23dcf1343 :: GET directory
+2017-04-22T20:59:52.151Z - debug: NFS  - b86edd6f-cb83-4bfd-bd20-71b23dcf1343 :: Invoking get directory request
+2017-04-22T20:59:52.151Z - debug: FFI :: Get application handle
+2017-04-22T20:59:52.152Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T20:59:52.153Z - debug: FFI :: Get client stats - Deleted count
+2017-04-22T20:59:52.156Z - debug: NFS - b86edd6f-cb83-4bfd-bd20-71b23dcf1343 :: Directory obtained
+2017-04-22T21:00:00.614Z - debug: Authorised request :: 7fac7162-9d03-4f99-883c-38e0cd45a116 :: Path - /auth
+2017-04-22T21:00:00.617Z - debug: Authorised request :: 7fac7162-9d03-4f99-883c-38e0cd45a116 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:00.617Z - debug: Auth :: 7fac7162-9d03-4f99-883c-38e0cd45a116 :: Check authorisation token valid
+2017-04-22T21:00:00.618Z - debug: Auth :: 7fac7162-9d03-4f99-883c-38e0cd45a116 :: Authorisation token valid
+2017-04-22T21:00:00.659Z - debug: Authorised request :: fe99e0e0-a36d-44ec-acef-89fdd853e9d7 :: Path - /dns
+2017-04-22T21:00:00.660Z - debug: Authorised request :: fe99e0e0-a36d-44ec-acef-89fdd853e9d7 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:00.660Z - debug: DNS - fe99e0e0-a36d-44ec-acef-89fdd853e9d7 :: List longnames
+2017-04-22T21:00:00.661Z - debug: DNS - fe99e0e0-a36d-44ec-acef-89fdd853e9d7 :: Invoking listLongNames
+2017-04-22T21:00:00.661Z - debug: FFI :: Get application handle
+2017-04-22T21:00:00.667Z - debug: DNS - fe99e0e0-a36d-44ec-acef-89fdd853e9d7 :: Longnames list obtained
+2017-04-22T21:00:00.691Z - debug: Authorised request :: ff5069b6-eed3-4990-932d-c305d575e6f0 :: Path - /nfs/directory/app//
+2017-04-22T21:00:00.695Z - debug: Authorised request :: ff5069b6-eed3-4990-932d-c305d575e6f0 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:00.695Z - debug: NFS - ff5069b6-eed3-4990-932d-c305d575e6f0 :: GET directory
+2017-04-22T21:00:00.696Z - debug: NFS  - ff5069b6-eed3-4990-932d-c305d575e6f0 :: Invoking get directory request
+2017-04-22T21:00:00.696Z - debug: FFI :: Get application handle
+2017-04-22T21:00:00.705Z - debug: NFS - ff5069b6-eed3-4990-932d-c305d575e6f0 :: Directory obtained
+2017-04-22T21:00:02.484Z - debug: Authorised request :: b01ba774-8f01-43b6-85e2-11582097b3ea :: Path - /nfs/directory/app//public/
+2017-04-22T21:00:02.486Z - debug: Authorised request :: b01ba774-8f01-43b6-85e2-11582097b3ea :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:02.487Z - debug: NFS - b01ba774-8f01-43b6-85e2-11582097b3ea :: GET directory
+2017-04-22T21:00:02.487Z - debug: NFS  - b01ba774-8f01-43b6-85e2-11582097b3ea :: Invoking get directory request
+2017-04-22T21:00:02.487Z - debug: FFI :: Get application handle
+2017-04-22T21:00:02.499Z - debug: NFS - b01ba774-8f01-43b6-85e2-11582097b3ea :: Directory obtained
+2017-04-22T21:00:03.862Z - debug: Authorised request :: 7ff10edc-a451-41fb-b4ea-636f41e730c0 :: Path - /nfs/directory/app//public/UPLOADTEST-gh-pages/
+2017-04-22T21:00:03.863Z - debug: Authorised request :: 7ff10edc-a451-41fb-b4ea-636f41e730c0 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:03.865Z - debug: NFS - 7ff10edc-a451-41fb-b4ea-636f41e730c0 :: GET directory
+2017-04-22T21:00:03.866Z - debug: NFS  - 7ff10edc-a451-41fb-b4ea-636f41e730c0 :: Invoking get directory request
+2017-04-22T21:00:03.866Z - debug: FFI :: Get application handle
+2017-04-22T21:00:03.870Z - debug: NFS - 7ff10edc-a451-41fb-b4ea-636f41e730c0 :: Directory obtained
+2017-04-22T21:00:05.599Z - debug: Authorised request :: 4cf989c9-8414-4e35-8980-a1b8f8225a60 :: Path - /nfs/directory/app//public/UPLOADTEST-gh-pages/assets/
+2017-04-22T21:00:05.600Z - debug: Authorised request :: 4cf989c9-8414-4e35-8980-a1b8f8225a60 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:05.600Z - debug: NFS - 4cf989c9-8414-4e35-8980-a1b8f8225a60 :: GET directory
+2017-04-22T21:00:05.601Z - debug: NFS  - 4cf989c9-8414-4e35-8980-a1b8f8225a60 :: Invoking get directory request
+2017-04-22T21:00:05.601Z - debug: FFI :: Get application handle
+2017-04-22T21:00:05.607Z - debug: NFS - 4cf989c9-8414-4e35-8980-a1b8f8225a60 :: Directory obtained
+2017-04-22T21:00:08.439Z - debug: Authorised request :: 2f9f9c7f-e7d9-4425-806f-18d0f7c66a9d :: Path - /nfs/directory/app//public/UPLOADTEST-gh-pages/assets//css
+2017-04-22T21:00:08.440Z - debug: Authorised request :: 2f9f9c7f-e7d9-4425-806f-18d0f7c66a9d :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:08.444Z - debug: NFS - 2f9f9c7f-e7d9-4425-806f-18d0f7c66a9d :: DELETE directory
+2017-04-22T21:00:08.445Z - debug: NFS - 2f9f9c7f-e7d9-4425-806f-18d0f7c66a9d :: Invoking delete directory request
+2017-04-22T21:00:08.448Z - debug: FFI :: Get application handle
+2017-04-22T21:00:08.716Z - debug: NFS - 2f9f9c7f-e7d9-4425-806f-18d0f7c66a9d :: Directory deleted
+2017-04-22T21:00:08.728Z - debug: Authorised request :: f1a40848-29f3-4d9a-896f-6db153a68a73 :: Path - /nfs/directory/app//public/UPLOADTEST-gh-pages/assets/
+2017-04-22T21:00:08.729Z - debug: Authorised request :: f1a40848-29f3-4d9a-896f-6db153a68a73 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:08.729Z - debug: NFS - f1a40848-29f3-4d9a-896f-6db153a68a73 :: GET directory
+2017-04-22T21:00:08.730Z - debug: NFS  - f1a40848-29f3-4d9a-896f-6db153a68a73 :: Invoking get directory request
+2017-04-22T21:00:08.730Z - debug: FFI :: Get application handle
+2017-04-22T21:00:08.734Z - debug: NFS - f1a40848-29f3-4d9a-896f-6db153a68a73 :: Directory obtained
+2017-04-22T21:00:14.557Z - debug: Authorised request :: 2c428162-5511-497e-a6e1-19ac3faf70f6 :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets/css
+2017-04-22T21:00:14.558Z - debug: Authorised request :: 2c428162-5511-497e-a6e1-19ac3faf70f6 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:14.560Z - debug: NFS - 2c428162-5511-497e-a6e1-19ac3faf70f6 :: Create directory
+2017-04-22T21:00:14.560Z - debug: NFS - 2c428162-5511-497e-a6e1-19ac3faf70f6 :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T21:00:14.560Z - debug: FFI :: Get application handle
+2017-04-22T21:00:14.832Z - debug: Authorised request :: 42273e03-bdd7-4712-a27f-77341956ffc9 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/3.woff2
+2017-04-22T21:00:14.835Z - debug: Authorised request :: 42273e03-bdd7-4712-a27f-77341956ffc9 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:14.835Z - debug: NFS - 42273e03-bdd7-4712-a27f-77341956ffc9 :: Create file
+2017-04-22T21:00:14.835Z - debug: NFS - 42273e03-bdd7-4712-a27f-77341956ffc9 :: Invoking create file request 
+    - {"metadata":"","length":4588}
+2017-04-22T21:00:14.835Z - debug: FFI :: Get application handle
+2017-04-22T21:00:15.214Z - debug: Authorised request :: c1cad9b5-5dae-4d74-bfb4-6b328e6037a5 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/4.woff2
+2017-04-22T21:00:15.217Z - debug: Authorised request :: c1cad9b5-5dae-4d74-bfb4-6b328e6037a5 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:15.218Z - debug: NFS - c1cad9b5-5dae-4d74-bfb4-6b328e6037a5 :: Create file
+2017-04-22T21:00:15.218Z - debug: NFS - c1cad9b5-5dae-4d74-bfb4-6b328e6037a5 :: Invoking create file request 
+    - {"metadata":"","length":12396}
+2017-04-22T21:00:15.218Z - debug: FFI :: Get application handle
+2017-04-22T21:00:15.573Z - debug: Authorised request :: 42283406-9a4c-4b32-8f7a-ae83217cd4e3 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/5.woff2
+2017-04-22T21:00:15.575Z - debug: Authorised request :: 42283406-9a4c-4b32-8f7a-ae83217cd4e3 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:15.576Z - debug: NFS - 42283406-9a4c-4b32-8f7a-ae83217cd4e3 :: Create file
+2017-04-22T21:00:15.576Z - debug: NFS - 42283406-9a4c-4b32-8f7a-ae83217cd4e3 :: Invoking create file request 
+    - {"metadata":"","length":14308}
+2017-04-22T21:00:15.576Z - debug: FFI :: Get application handle
+2017-04-22T21:00:15.970Z - debug: Authorised request :: b27090fb-981b-4209-962c-8343709b356d :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/6.woff2
+2017-04-22T21:00:15.972Z - debug: Authorised request :: b27090fb-981b-4209-962c-8343709b356d :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:15.973Z - debug: NFS - b27090fb-981b-4209-962c-8343709b356d :: Create file
+2017-04-22T21:00:15.973Z - debug: NFS - b27090fb-981b-4209-962c-8343709b356d :: Invoking create file request 
+    - {"metadata":"","length":4368}
+2017-04-22T21:00:15.973Z - debug: FFI :: Get application handle
+2017-04-22T21:00:16.349Z - debug: Authorised request :: 64439e1d-da2d-4a78-b85d-398f709ed0f5 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/7.woff2
+2017-04-22T21:00:16.351Z - debug: Authorised request :: 64439e1d-da2d-4a78-b85d-398f709ed0f5 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:16.352Z - debug: NFS - 64439e1d-da2d-4a78-b85d-398f709ed0f5 :: Create file
+2017-04-22T21:00:16.352Z - debug: NFS - 64439e1d-da2d-4a78-b85d-398f709ed0f5 :: Invoking create file request 
+    - {"metadata":"","length":11928}
+2017-04-22T21:00:16.352Z - debug: FFI :: Get application handle
+2017-04-22T21:00:16.732Z - debug: Authorised request :: 1cfb64b1-d6c2-4c05-8ead-7e9ac2910ca9 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/8.woff2
+2017-04-22T21:00:16.741Z - debug: Authorised request :: 1cfb64b1-d6c2-4c05-8ead-7e9ac2910ca9 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:16.742Z - debug: NFS - 1cfb64b1-d6c2-4c05-8ead-7e9ac2910ca9 :: Create file
+2017-04-22T21:00:16.742Z - debug: NFS - 1cfb64b1-d6c2-4c05-8ead-7e9ac2910ca9 :: Invoking create file request 
+    - {"metadata":"","length":13408}
+2017-04-22T21:00:16.742Z - debug: FFI :: Get application handle
+2017-04-22T21:00:17.111Z - debug: Authorised request :: 96b65842-88eb-4f31-a91b-b6e1d6e6bbcb :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/font-awesome.min.css
+2017-04-22T21:00:17.113Z - debug: Authorised request :: 96b65842-88eb-4f31-a91b-b6e1d6e6bbcb :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:17.114Z - debug: NFS - 96b65842-88eb-4f31-a91b-b6e1d6e6bbcb :: Create file
+2017-04-22T21:00:17.114Z - debug: NFS - 96b65842-88eb-4f31-a91b-b6e1d6e6bbcb :: Invoking create file request 
+    - {"metadata":"","length":29063}
+2017-04-22T21:00:17.114Z - debug: FFI :: Get application handle
+2017-04-22T21:00:17.497Z - debug: Authorised request :: 89ccdc7c-03e2-437d-82eb-0316b4c6eeeb :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/googleapis.css
+2017-04-22T21:00:17.498Z - debug: Authorised request :: 89ccdc7c-03e2-437d-82eb-0316b4c6eeeb :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:17.498Z - debug: NFS - 89ccdc7c-03e2-437d-82eb-0316b4c6eeeb :: Create file
+2017-04-22T21:00:17.498Z - debug: NFS - 89ccdc7c-03e2-437d-82eb-0316b4c6eeeb :: Invoking create file request 
+    - {"metadata":"","length":1810}
+2017-04-22T21:00:17.498Z - debug: FFI :: Get application handle
+2017-04-22T21:00:17.659Z - debug: Authorised request :: 93432894-4dd7-4661-8dd1-cdaede5a5a3d :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/ie8.css
+2017-04-22T21:00:17.659Z - debug: Authorised request :: 93432894-4dd7-4661-8dd1-cdaede5a5a3d :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:17.660Z - debug: NFS - 93432894-4dd7-4661-8dd1-cdaede5a5a3d :: Create file
+2017-04-22T21:00:17.660Z - debug: NFS - 93432894-4dd7-4661-8dd1-cdaede5a5a3d :: Invoking create file request 
+    - {"metadata":"","length":473}
+2017-04-22T21:00:17.660Z - debug: FFI :: Get application handle
+2017-04-22T21:00:17.833Z - debug: Authorised request :: 50505778-064e-4c3b-8492-60a771a97e0b :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/ie9.css
+2017-04-22T21:00:17.834Z - debug: Authorised request :: 50505778-064e-4c3b-8492-60a771a97e0b :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:17.834Z - debug: NFS - 50505778-064e-4c3b-8492-60a771a97e0b :: Create file
+2017-04-22T21:00:17.834Z - debug: NFS - 50505778-064e-4c3b-8492-60a771a97e0b :: Invoking create file request 
+    - {"metadata":"","length":383}
+2017-04-22T21:00:17.835Z - debug: FFI :: Get application handle
+2017-04-22T21:00:18.012Z - debug: Authorised request :: 9e9d0053-400d-46cf-b1b7-a81994c43f1e :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets/css/images
+2017-04-22T21:00:18.013Z - debug: Authorised request :: 9e9d0053-400d-46cf-b1b7-a81994c43f1e :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:18.014Z - debug: NFS - 9e9d0053-400d-46cf-b1b7-a81994c43f1e :: Create directory
+2017-04-22T21:00:18.014Z - debug: NFS - 9e9d0053-400d-46cf-b1b7-a81994c43f1e :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T21:00:18.014Z - debug: FFI :: Get application handle
+2017-04-22T21:00:18.246Z - debug: Authorised request :: cac4bda6-5a55-4d6a-88af-1f802ebd03f5 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/bg.jpg
+2017-04-22T21:00:18.246Z - debug: Authorised request :: cac4bda6-5a55-4d6a-88af-1f802ebd03f5 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:18.247Z - debug: NFS - cac4bda6-5a55-4d6a-88af-1f802ebd03f5 :: Create file
+2017-04-22T21:00:18.247Z - debug: NFS - cac4bda6-5a55-4d6a-88af-1f802ebd03f5 :: Invoking create file request 
+    - {"metadata":"","length":598204}
+2017-04-22T21:00:18.247Z - debug: FFI :: Get application handle
+2017-04-22T21:00:18.762Z - debug: Authorised request :: fba59d94-e1b8-4597-a7f6-0c5e8173d8ff :: Path - /nfs/directory/app/public/UPLOADTEST-gh-pages/assets/css/images/ie
+2017-04-22T21:00:18.763Z - debug: Authorised request :: fba59d94-e1b8-4597-a7f6-0c5e8173d8ff :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:18.764Z - debug: NFS - fba59d94-e1b8-4597-a7f6-0c5e8173d8ff :: Create directory
+2017-04-22T21:00:18.764Z - debug: NFS - fba59d94-e1b8-4597-a7f6-0c5e8173d8ff :: Invoking create directory request - {"userMetadata":null,"metadata":"","isPrivate":false}
+2017-04-22T21:00:18.764Z - debug: FFI :: Get application handle
+2017-04-22T21:00:18.995Z - debug: Authorised request :: ebf190e4-4374-4f98-bd06-92038a4e3641 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/ie/footer.png
+2017-04-22T21:00:18.995Z - debug: Authorised request :: ebf190e4-4374-4f98-bd06-92038a4e3641 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:18.996Z - debug: NFS - ebf190e4-4374-4f98-bd06-92038a4e3641 :: Create file
+2017-04-22T21:00:18.996Z - debug: NFS - ebf190e4-4374-4f98-bd06-92038a4e3641 :: Invoking create file request 
+    - {"metadata":"","length":424}
+2017-04-22T21:00:18.996Z - debug: FFI :: Get application handle
+2017-04-22T21:00:19.155Z - debug: Authorised request :: 6b75f782-a267-4113-9522-24540a5fc8bf :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/ie/footer.svg
+2017-04-22T21:00:19.156Z - debug: Authorised request :: 6b75f782-a267-4113-9522-24540a5fc8bf :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:19.157Z - debug: NFS - 6b75f782-a267-4113-9522-24540a5fc8bf :: Create file
+2017-04-22T21:00:19.159Z - debug: NFS - 6b75f782-a267-4113-9522-24540a5fc8bf :: Invoking create file request 
+    - {"metadata":"","length":432}
+2017-04-22T21:00:19.159Z - debug: FFI :: Get application handle
+2017-04-22T21:00:19.320Z - debug: Authorised request :: 4130e9b2-7423-4e7e-a740-0f7b23bad707 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/overlay-pattern.png
+2017-04-22T21:00:19.321Z - debug: Authorised request :: 4130e9b2-7423-4e7e-a740-0f7b23bad707 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:19.322Z - debug: NFS - 4130e9b2-7423-4e7e-a740-0f7b23bad707 :: Create file
+2017-04-22T21:00:19.322Z - debug: NFS - 4130e9b2-7423-4e7e-a740-0f7b23bad707 :: Invoking create file request 
+    - {"metadata":"","length":13892}
+2017-04-22T21:00:19.322Z - debug: FFI :: Get application handle
+2017-04-22T21:00:19.685Z - debug: Authorised request :: 58ca3082-a956-4bfc-80e6-d1a1adaf9fd2 :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/images/overlay.svg
+2017-04-22T21:00:19.686Z - debug: Authorised request :: 58ca3082-a956-4bfc-80e6-d1a1adaf9fd2 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:19.686Z - debug: NFS - 58ca3082-a956-4bfc-80e6-d1a1adaf9fd2 :: Create file
+2017-04-22T21:00:19.686Z - debug: NFS - 58ca3082-a956-4bfc-80e6-d1a1adaf9fd2 :: Invoking create file request 
+    - {"metadata":"","length":785}
+2017-04-22T21:00:19.686Z - debug: FFI :: Get application handle
+2017-04-22T21:00:19.876Z - debug: Authorised request :: d9a628a6-a06c-4787-8b6d-2427e768fe3c :: Path - /nfs/file/app//public/UPLOADTEST-gh-pages/assets/css/main.css
+2017-04-22T21:00:19.878Z - debug: Authorised request :: d9a628a6-a06c-4787-8b6d-2427e768fe3c :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:19.879Z - debug: NFS - d9a628a6-a06c-4787-8b6d-2427e768fe3c :: Create file
+2017-04-22T21:00:19.879Z - debug: NFS - d9a628a6-a06c-4787-8b6d-2427e768fe3c :: Invoking create file request 
+    - {"metadata":"","length":24343}
+2017-04-22T21:00:19.880Z - debug: FFI :: Get application handle
+2017-04-22T21:00:20.273Z - debug: Authorised request :: a6b88e98-944b-4d8e-b309-361c11592b80 :: Path - /nfs/directory/app//public/UPLOADTEST-gh-pages/assets/
+2017-04-22T21:00:20.274Z - debug: Authorised request :: a6b88e98-944b-4d8e-b309-361c11592b80 :: Decrypted session id - Xkc4qqLI+a2KJkkBsmaRvo04zVoiXZJlDVUChz5VocQ=
+2017-04-22T21:00:20.274Z - debug: NFS - a6b88e98-944b-4d8e-b309-361c11592b80 :: GET directory
+2017-04-22T21:00:20.275Z - debug: NFS  - a6b88e98-944b-4d8e-b309-361c11592b80 :: Invoking get directory request
+2017-04-22T21:00:20.275Z - debug: FFI :: Get application handle
+2017-04-22T21:00:20.284Z - debug: NFS - a6b88e98-944b-4d8e-b309-361c11592b80 :: Directory obtained
+2017-04-22T21:00:29.703Z - debug: Unauthorised request :: d747690e-1336-44ed-9e95-154a2d5dd317 :: Path - /dns/wom/upload/index.html
+2017-04-22T21:00:29.704Z - debug: DNS - d747690e-1336-44ed-9e95-154a2d5dd317 :: Get file
+2017-04-22T21:00:29.706Z - debug: FFI :: Get application handle
+2017-04-22T21:00:29.708Z - debug: DNS - d747690e-1336-44ed-9e95-154a2d5dd317 :: Ready to stream file for range 0 - 6674 / 6674
+2017-04-22T21:00:29.712Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.359Z - debug: Unauthorised request :: df6c5366-2469-444d-a099-c02f51c4dda1 :: Path - /dns/wom/upload/assets%2Fcss%2Fmain.css
+2017-04-22T21:00:30.361Z - debug: DNS - df6c5366-2469-444d-a099-c02f51c4dda1 :: Get file
+2017-04-22T21:00:30.362Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.364Z - debug: DNS - df6c5366-2469-444d-a099-c02f51c4dda1 :: Ready to stream file for range 0 - 24343 / 24343
+2017-04-22T21:00:30.365Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.386Z - debug: Unauthorised request :: cb2d31b2-2f9c-41cb-9a4b-f402b5fbbc2d :: Path - /dns/wom/upload/assets%2Fcss%2Fgoogleapis.css
+2017-04-22T21:00:30.386Z - debug: DNS - cb2d31b2-2f9c-41cb-9a4b-f402b5fbbc2d :: Get file
+2017-04-22T21:00:30.387Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.388Z - debug: Unauthorised request :: 49ca7a0e-1c46-409d-b3c6-219f8f76f2f6 :: Path - /dns/wom/upload/assets%2Fcss%2Ffont-awesome.min.css
+2017-04-22T21:00:30.389Z - debug: DNS - 49ca7a0e-1c46-409d-b3c6-219f8f76f2f6 :: Get file
+2017-04-22T21:00:30.389Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.391Z - debug: DNS - cb2d31b2-2f9c-41cb-9a4b-f402b5fbbc2d :: Ready to stream file for range 0 - 1810 / 1810
+2017-04-22T21:00:30.392Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.393Z - debug: DNS - 49ca7a0e-1c46-409d-b3c6-219f8f76f2f6 :: Ready to stream file for range 0 - 29063 / 29063
+2017-04-22T21:00:30.394Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.483Z - debug: Unauthorised request :: f89087c9-bf8a-4f10-9a61-334b6e489809 :: Path - /dns/wom/upload/assets%2Fcss%2Fimages%2Fbg.jpg
+2017-04-22T21:00:30.483Z - debug: DNS - f89087c9-bf8a-4f10-9a61-334b6e489809 :: Get file
+2017-04-22T21:00:30.483Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.486Z - debug: Unauthorised request :: 086f64fa-4379-47dc-b3a3-ed00fee55c1b :: Path - /dns/wom/upload/assets%2Fcss%2Fimages%2Foverlay-pattern.png
+2017-04-22T21:00:30.487Z - debug: DNS - 086f64fa-4379-47dc-b3a3-ed00fee55c1b :: Get file
+2017-04-22T21:00:30.488Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.489Z - debug: DNS - f89087c9-bf8a-4f10-9a61-334b6e489809 :: Ready to stream file for range 0 - 598204 / 598204
+2017-04-22T21:00:30.489Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.490Z - debug: Unauthorised request :: d7a1fc69-d8ce-4517-b012-2034ecfe1cba :: Path - /dns/wom/upload/assets%2Fcss%2Fimages%2Foverlay.svg
+2017-04-22T21:00:30.491Z - debug: DNS - d7a1fc69-d8ce-4517-b012-2034ecfe1cba :: Get file
+2017-04-22T21:00:30.491Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.492Z - debug: Unauthorised request :: 977598bb-439a-4b6c-a59f-5b17e4c6fedd :: Path - /dns/wom/upload/assets%2Fcss%2F8.woff2
+2017-04-22T21:00:30.493Z - debug: DNS - 977598bb-439a-4b6c-a59f-5b17e4c6fedd :: Get file
+2017-04-22T21:00:30.494Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.496Z - debug: Unauthorised request :: 06470e4b-4947-41c7-8744-ee69d3ee9dc5 :: Path - /dns/wom/upload/assets%2Fcss%2F5.woff2
+2017-04-22T21:00:30.497Z - debug: DNS - 06470e4b-4947-41c7-8744-ee69d3ee9dc5 :: Get file
+2017-04-22T21:00:30.497Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.498Z - debug: DNS - 086f64fa-4379-47dc-b3a3-ed00fee55c1b :: Ready to stream file for range 0 - 13892 / 13892
+2017-04-22T21:00:30.501Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.502Z - debug: DNS - 977598bb-439a-4b6c-a59f-5b17e4c6fedd :: Ready to stream file for range 0 - 13408 / 13408
+2017-04-22T21:00:30.503Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.504Z - debug: DNS - 06470e4b-4947-41c7-8744-ee69d3ee9dc5 :: Ready to stream file for range 0 - 14308 / 14308
+2017-04-22T21:00:30.504Z - debug: FFI :: Get application handle
+2017-04-22T21:00:30.536Z - debug: DNS - d7a1fc69-d8ce-4517-b012-2034ecfe1cba :: Ready to stream file for range 0 - 785 / 785
+2017-04-22T21:00:30.537Z - debug: FFI :: Get application handle
+2017-04-22T21:00:31.293Z - debug: Authorised request :: ac343753-d5d4-4274-94da-d22679f66184 :: Path - /0.5/nfs/file/app/safeBrowserData.json
+2017-04-22T21:00:31.295Z - debug: Authorised request :: ac343753-d5d4-4274-94da-d22679f66184 :: Decrypted session id - wKwj2scZcCFI92xPitJij/gPKjWFOUfBWjpyONt5/Lg=
+2017-04-22T21:00:31.296Z - debug: NFS - ac343753-d5d4-4274-94da-d22679f66184 :: Get file
+2017-04-22T21:00:31.296Z - debug: NFS - ac343753-d5d4-4274-94da-d22679f66184 :: Invoking get file request
+2017-04-22T21:00:31.296Z - debug: FFI :: Get application handle
+2017-04-22T21:00:31.298Z - debug: NFS - ac343753-d5d4-4274-94da-d22679f66184 :: File metadata for reading - {"name":"safeBrowserData.json","metadata":"","size":2185,"createdOn":"2017-04-22T20:51:26.515Z","modifiedOn":"2017-04-22T20:51:26.518Z"}
+2017-04-22T21:00:31.299Z - debug: NFS - ac343753-d5d4-4274-94da-d22679f66184 :: Ready to stream file for range 0 - 2185 / 2185
+2017-04-22T21:00:31.300Z - debug: FFI :: Get application handle
+2017-04-22T21:00:31.360Z - debug: Authorised request :: 9eeccc94-5b44-4e93-85a5-036043adb358 :: Path - /0.5/nfs/file/app/safeBrowserData.json
+2017-04-22T21:00:31.361Z - debug: Authorised request :: 9eeccc94-5b44-4e93-85a5-036043adb358 :: Decrypted session id - wKwj2scZcCFI92xPitJij/gPKjWFOUfBWjpyONt5/Lg=
+2017-04-22T21:00:31.362Z - debug: NFS - 9eeccc94-5b44-4e93-85a5-036043adb358 :: Delete file
+2017-04-22T21:00:31.362Z - debug: NFS - 9eeccc94-5b44-4e93-85a5-036043adb358 :: Invoking delete file request
+2017-04-22T21:00:31.363Z - debug: FFI :: Get application handle
+2017-04-22T21:00:31.612Z - debug: Authorised request :: 4ee06c4f-0587-4d96-8060-0aab19f02fd4 :: Path - /0.5/nfs/file/app/safeBrowserData.json
+2017-04-22T21:00:31.613Z - debug: Authorised request :: 4ee06c4f-0587-4d96-8060-0aab19f02fd4 :: Decrypted session id - wKwj2scZcCFI92xPitJij/gPKjWFOUfBWjpyONt5/Lg=
+2017-04-22T21:00:31.614Z - debug: NFS - 4ee06c4f-0587-4d96-8060-0aab19f02fd4 :: Create file
+2017-04-22T21:00:31.614Z - debug: NFS - 4ee06c4f-0587-4d96-8060-0aab19f02fd4 :: Invoking create file request 
+    - {"metadata":"","length":2212}
+2017-04-22T21:00:31.614Z - debug: FFI :: Get application handle
+2017-04-22T21:00:37.377Z - debug: Authorised request :: 53d36d6c-5bac-4112-b291-dd1eea7cc890 :: Path - /0.5/auth
+2017-04-22T21:00:37.378Z - debug: Authorised request :: 53d36d6c-5bac-4112-b291-dd1eea7cc890 :: Decrypted session id - ACt4dlsf3bhGZ2Lf4xOMRZHAeM2PYCxIhbQK/fZie+Y=
+2017-04-22T21:00:37.379Z - debug: Auth :: 53d36d6c-5bac-4112-b291-dd1eea7cc890 :: Check authorisation token valid
+2017-04-22T21:00:37.379Z - debug: Auth :: 53d36d6c-5bac-4112-b291-dd1eea7cc890 :: Authorisation token valid
+2017-04-22T21:00:37.393Z - debug: Authorised request :: 81b5414e-2642-4b8b-bad9-7b08e3b03cee :: Path - /0.5/nfs/file/app/CURRENTCHATFILE
+2017-04-22T21:00:37.394Z - debug: Authorised request :: 81b5414e-2642-4b8b-bad9-7b08e3b03cee :: Decrypted session id - ACt4dlsf3bhGZ2Lf4xOMRZHAeM2PYCxIhbQK/fZie+Y=
+2017-04-22T21:00:37.395Z - debug: NFS - 81b5414e-2642-4b8b-bad9-7b08e3b03cee :: Get file
+2017-04-22T21:00:37.395Z - debug: NFS - 81b5414e-2642-4b8b-bad9-7b08e3b03cee :: Invoking get file request
+2017-04-22T21:00:37.395Z - debug: FFI :: Get application handle
+2017-04-22T21:00:37.397Z - error: FFI :: NFS :: Get file metadata :: -1503
+2017-04-22T21:00:37.399Z - warn: API Error handling :: 81b5414e-2642-4b8b-bad9-7b08e3b03cee :: Err 404 - Msg 
+        :: {"errorCode":-1503,"description":"FfiError::InvalidPath"}
+2017-04-22T21:00:51.764Z - debug: FFI :: Get client stats - Gets count
+2017-04-22T21:00:51.764Z - debug: FFI :: Get client stats - Puts count
+2017-04-22T21:00:51.765Z - debug: FFI :: Get client stats - Posts count
+2017-04-22T21:00:51.765Z - debug: FFI :: Get client stats - Deleted count

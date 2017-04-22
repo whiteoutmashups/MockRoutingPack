@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Demo Web App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading" style="overflow:hidden;">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main" style="background-color:rgba(255, 255, 255, 0.69);height:100%;width:75%;    position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;word-wrap:break-word;">
+
+				<!-- Header -->
+					<header id="header">
+						<h1 style="text-shadow: 2px 2px #000000;">Demo App</h1>
+						<p style="text-shadow: 2px 2px #000000;font-weight:900;"><b>Presented by SAFE-FS</b><br></p>
+
+					<div id="auth" style="display:none;">
+						<p><a class="button fit scrolly" onClick="authorize()">authorize</a></p>
+					</div>
+
+					<div id="dir" style="display:none;">
+						<p><input type="text" id="dirname" placeholder="  Name Your Folder" /></p>
+						<p style="color:black;">You need folders for your files. (<a id="skip" onClick="toFiles()">Next -></a>)<br><a onClick="getdir()">Search for the above Folder</a></p>
+						<p><a class="button fit scrolly" onClick="createdir()">Create Folder</a></p>
+						<p id="dirresponse" style="color:black;font-weight:700;"></p>
+					</div>
+
+					<div id="file" style="display:none;">
+						<p><input type="text" id="filename" placeholder="  Filename..." /></p>
+						<p><input type="text" id="content" placeholder="  File Contents, HTML etc!..."/></p>
+						<p style="color:black;">Create files! Website format: folder/index.html (<a id="skip2" onClick="toid()">Next -></a>)<br><a onClick="getfile()"><b>Click here</b> to search for above file. </a><a onClick="deletefile()">(<font style="color:red;font-weight:500;">Delete File?</font>)</a></p>
+						<p><a class="button fit scrolly" onClick="createorupdatefile()">Save File</a></p>
+						<p id="fileresponse" style="color:black;font-weight:700;"></p>
+					</div>
+
+					<div id="id" style="display:none;">
+						<p><input type="text" id="longname" placeholder="  Create an ID..." /></p>
+						<p style="color:black;"><a onClick="listlongnames()">Click here to see your current IDs </a>(<a id="skip3" onClick="tourl()">Next -></a>)</p>
+						<p><a class="button fit scrolly" onClick="createlongname()">Create a Public ID</a></p>
+						<p id="idresponse" style="color:black;font-weight:700;"></p>
+					</div>
+
+					<div id="url" style="display:none;color:black;">
+						<p style="color:black;"><input id="longnametwo" type="text" name="longnametwo" placeholder="  Enter ID to use..." /> <a onClick="longnamesagain()">Click here to see your IDs again.</a></p>
+						<p><input type="text" id="servicename" placeholder="  Desired URL..." /> <a onClick="listservices()">Click here to see current URLs.</a></p>
+						<p><input type="text" id="homedir" placeholder="  Website Folder (has index.html)..." /> Enter path to your Website's folder (with "index.html" in it).</p>
+						<p><a class="button fit scrolly" onClick="createservice()">Activate URL</a></p>
+						<p id="serviceresponse" style="color:black;font-weight:700;"></p>
+					</div>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; SAFE-FS; <span id="buttbar"><a>WhiteOutMashups</a></span>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script type="text/javascript">
+			var auth = null;
+
+			function authorize() {
+				const app =
+					{
+				    name: "Demo App by SAFE-FS",
+				    id: "Demo1",
+				    version: "0.0.1",
+				    vendor:"WhiteOutMashups",
+				    permissions: ["SAFE_DRIVE_ACCESS"]
+					};
+					var loginbtn = document.getElementById("loginbtn");
+				safeAuth.authorise(app).then(function(response){
+					auth = response;
+					document.getElementById("auth").style.display="none";
+					document.getElementById("dir").style.display="block";
+					document.getElementById("buttbar").innerHTML="Skip to: <a onClick='toFolder()'>Folders</a> &#8226; <a onClick='toFiles()'>Files</a> &#8226; <a onClick='toid()'>IDs</a> &#8226; <a onClick='tourl()'>URLs</a>"
+					//loginbtn.innerHTML = 'Authorized!';
+					//loginbtn.onclick = null;
+				});
+			};
+
+			function createdir(){
+				if(!auth){
+					alert('Please Refresh Page & Login First');
+					return;
+				}
+				var name = (document.getElementById('dirname').value).trim();
+				if(name==""){
+					alert('Please Enter a name');
+					return;
+				}
+				safeNFS.createDir(auth.token,name,false).then(function(response){
+					document.getElementById('dirresponse').innerHTML = '<font color="#228604">Successfully Created Directory: </font>'+name;
+					document.getElementById('skip').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+				},function(error){
+					console.log(error);
+					document.getElementById('skip').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					document.getElementById('dirresponse').innerHTML = "Error: Directory Already Created?";
+				});
+			}
+			function getdir(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var name = (document.getElementById('dirname').value).trim();
+				if(name==""){
+					alert('Please Enter a name');
+					return;
+				}
+				safeNFS.getDir(auth.token,name).then(function(response){
+					document.getElementById('skip').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					document.getElementById('dirresponse').innerHTML = '<font color="#228604">Folder Found! Result:</font> <br>' + JSON.stringify(response);
+				},function(error){
+					document.getElementById('skip').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					document.getElementById('dirresponse').innerHTML = "Error on getting directory";
+				});
+			}
+			function createorupdatefile(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var name = (document.getElementById('filename').value).trim();
+				if(name==""){
+					alert('Please Enter a name');
+					return;
+				}
+				var contennts = (document.getElementById('content').value).trim();
+				if(contennts==""){
+					alert('Please Enter some File Contents');
+					return;
+				}
+				var content = (document.getElementById('content').value).trim();
+				safeNFS.createOrUpdateFile(auth.token,name,content).then(function(response){
+					document.getElementById('skip2').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					document.getElementById('fileresponse').innerHTML = '<font color="#228604">Successfully Saved Changes to : </font>'+name;
+				},function(error){
+					//console.log(error);
+					document.getElementById('skip2').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					document.getElementById('fileresponse').innerHTML = "Error creating or updating file";
+				});
+			}
+			function getfile(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var name = (document.getElementById('filename').value).trim();
+				if(name==""){
+					alert('Please Enter a name');
+					return;
+				}
+				safeNFS.getFile(auth.token,name).then(function(response){
+					document.getElementById('skip2').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					document.getElementById('fileresponse').innerHTML = "<font color='#228604'>File Found! Contents: </font>" + JSON.stringify(response);
+				},function(error){
+					document.getElementById('skip2').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					document.getElementById('fileresponse').innerHTML = "Error: File Not Found";
+				});
+			}
+			function deletefile(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var name = (document.getElementById('filename').value).trim();
+				if(name==""){
+					alert('Please Enter a name');
+					return;
+				}
+				safeNFS.deleteFile(auth.token,name).then(function(response){
+					document.getElementById('fileresponse').innerHTML = "<font color='#228604'>Successfully Deleted: </font>" +name;
+				},function(error){
+					document.getElementById('fileresponse').innerHTML = "Error: File Already Deleted?";
+				});
+			}
+
+			function createlongname(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var prename = (document.getElementById('longname').value).trim();
+				if(prename==""){
+					alert('Please type an ID');
+					return;
+				}
+				var name = prename.toLowerCase();
+				safeDNS.createLongName(auth.token,name).then(function(response){
+					document.getElementById('idresponse').innerHTML = "<font color='#228604'>Successfully Created ID: </font>"+name;
+					document.getElementById('skip3').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+				},function(error){
+					document.getElementById('idresponse').innerHTML = "<font color='#228604'>Successfully Requested ID: </font>"+name;
+					document.getElementById('skip3').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					//document.getElementById('idresponse').innerHTML = error
+				});
+			}
+			function createservice(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var name = (document.getElementById('servicename').value).trim();
+				if(name==""){
+					alert('Please Enter a URL');
+					return;
+				}
+				var longname = (document.getElementById('longnametwo').value).trim();
+				var homedir = (document.getElementById('homedir').value).trim();
+				if(longname==""){
+					alert('Please type an ID to use (into the top box)');
+					return;
+				}
+				safeDNS.addService(auth.token,longname,name,homedir,false).then(function(response){
+					document.getElementById('serviceresponse').innerHTML = "<font color='#228604'>Your site should now be live at: </font><br>safe://"+name+"."+longname;
+					document.getElementById('skip4').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+				},function(error){
+					//console.log(error);
+					//document.getElementById('serviceerror').innerHTML = JSON.stringify(error)+" Error on creating service";
+					document.getElementById('serviceresponse').innerHTML = "<font color='#228604'>Your site should now be live at: </font><br>safe://"+name+"."+longname;
+					document.getElementById('skip4').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+				});
+			}
+			function listlongnames(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				safeDNS.listLongNames(auth.token).then(function(response){
+					document.getElementById('idresponse').innerHTML = "<font color='#228604'>These are your current IDs:<br></font>"+JSON.stringify(response);
+					document.getElementById('skip4').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+				},function(error){
+					document.getElementById('idresponse').innerHTML = "Error listing IDs";
+					document.getElementById('skip4').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+				});
+			}
+			function longnamesagain(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				safeDNS.listLongNames(auth.token).then(function(response){
+					document.getElementById('serviceresponse').innerHTML = "<font color='#228604'>These are your current IDs:<br></font>"+JSON.stringify(response);
+				},function(error){
+					document.getElementById('serviceresponse').innerHTML = "Error listing IDs";
+				});
+			}
+			function listservices(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var longname = (document.getElementById('longnametwo').value).trim();
+				if(longname==""){
+					alert("Please type an ID to check (in the first box)");
+					return;
+				}
+				safeDNS.listServices(auth.token,longname).then(function(response){
+					document.getElementById('serviceresponse').innerHTML = "<font color='#228604'>These are your active URLs: </font><br>"+JSON.stringify(response);
+				},function(error){
+
+					document.getElementById('serviceresponse').innerHTML = JSON.stringify(error)+" Error: No Active URLS Found";
+				});
+			}
+	</script>
+		<script>
+			window.onload = function() { document.body.className = ''; document.getElementById("auth").style.display="block"; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			function toFiles() {
+				document.getElementById("dir").style.display="none";
+				document.getElementById("id").style.display="none";
+				document.getElementById("url").style.display="none";
+				document.getElementById("file").style.display="block";
+			}
+			function toid() {
+				document.getElementById("dir").style.display="none";
+				document.getElementById("id").style.display="block";
+				document.getElementById("file").style.display="none";
+				document.getElementById("url").style.display="none";
+			}
+			function tourl() {
+				document.getElementById("dir").style.display="none";
+				document.getElementById("id").style.display="none";
+				document.getElementById("file").style.display="none";
+				document.getElementById("url").style.display="block";
+			}
+			function toFolder() {
+				document.getElementById("dir").style.display="block";
+				document.getElementById("id").style.display="none";
+				document.getElementById("url").style.display="none";
+				document.getElementById("file").style.display="none";
+			}
+		</script>
+	</body>
+</html>

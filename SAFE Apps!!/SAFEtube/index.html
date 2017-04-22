@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SAFEtube</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  		<link href="video-js.css" rel="stylesheet">
+			<script>	
+				document.addEventListener('DOMContentLoaded', function() {
+				document.getElementById("maid").style.display = "none";
+				document.getElementById("ness").style.display = "none";
+				document.getElementById("alice").style.display = "none";
+				document.getElementById("pop").style.display = "block";
+}, false);
+			</script>
+  		<script src="videojs-ie8.min.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+				<img src="1a.jpg" width="20%" height="10%"/>
+							<center>
+<div id="pop">  
+<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  poster="pop.jpg" data-setup="{}">
+    <source src="pop.mp4" type='video/mp4'>
+    <p class="vjs-no-js">
+      HTML5 video not supported by your browser</a>
+    </p>
+  </video>
+</div>
+<div id="maid">  
+<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  poster="maid.jpeg" data-setup="{}">
+    <source src="maid.mp4" type='video/mp4'>
+    <p class="vjs-no-js">
+      HTML5 video not supported by your browser</a>
+    </p>
+  </video>
+</div>
+<div id="alice">  
+<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  poster="alice.jpg" data-setup="{}">
+    <source src="alice.mp4" type='video/mp4'>
+    <p class="vjs-no-js">
+      HTML5 video not supported by your browser</a>
+    </p>
+  </video>
+</div>
+<div id="ness">  
+<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  poster="ness.jpg" data-setup="{}">
+    <source src="ness.mp4" type='video/mp4'>
+    <p class="vjs-no-js">
+      HTML5 video not supported by your browser</a>
+    </p>
+  </video>
+</div>
+Directory:
+<div style="height:50px;width:70%;overflow-y:scroll;background-color:#e8e8e8;">
+<a onclick="popeye()">Public Domain Popeye Cartoon</a><br>
+<a onclick="maid()">MaidSafe Explanation Short</a><br>
+<a onclick="alice()">Public Domain Alice Silent</a><br>
+<a onclick="ness()">Smash Bros Combo Video</a><br>
+</div>
+</center>
+						</header>
+						
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; SAFE-FS</li><li>Sample <a href="#">Video Player</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+			<script>
+				function popeye() {
+				document.getElementById("maid").style.display = "none";
+				document.getElementById("ness").style.display = "none";
+				document.getElementById("alice").style.display = "none";
+				document.getElementById("pop").style.display = "block";
+				}
+				function maid() {
+				document.getElementById("maid").style.display = "block";
+				document.getElementById("ness").style.display = "none";
+				document.getElementById("alice").style.display = "none";
+				document.getElementById("pop").style.display = "none";
+				}
+				function alice() {
+				document.getElementById("maid").style.display = "none";
+				document.getElementById("ness").style.display = "none";
+				document.getElementById("alice").style.display = "block";
+				document.getElementById("pop").style.display = "none";
+				}
+				function ness() {
+				document.getElementById("maid").style.display = "none";
+				document.getElementById("ness").style.display = "block";
+				document.getElementById("alice").style.display = "none";
+				document.getElementById("pop").style.display = "none";
+				}
+			</script>
+
+	</body>
+</html>

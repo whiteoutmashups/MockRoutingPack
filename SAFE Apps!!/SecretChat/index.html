@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Secret Chat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading" style="overflow:hidden;">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main" style="background-color:rgba(255, 255, 255, 0.69);height:100%;width:75%;    position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;word-wrap:break-word;">
+
+				<!-- Header -->
+					<header id="header">
+						<h1 style="text-shadow: 2px 2px #000000;">Secret Chat</h1>
+						<p style="text-shadow: 2px 2px #000000;font-weight:900;"><b>Presented by SAFE-FS</b><br></p>
+
+					<div id="auth" style="display:none;">
+						<p><a class="button fit scrolly" onClick="authorize()">authorize</a></p>
+					</div>
+
+
+
+
+
+
+
+
+
+					<div id="file" style="display:none;">
+						<p><input type="text" id="content" placeholder="  Enter A Message!..." onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('btnSearch').click()"  /></p>
+						<p><a id='btnSearch' class="button fit scrolly" onClick="createorupdatefile()">Send Message</a></p>
+						<p id="fileresponse" style="color:black;font-weight:700;"></p>
+						<!--div id="chathistory" style="background:black;overflow-y:scroll;height:75px;width:50%;"></div-->
+					</div>
+
+
+
+
+
+
+
+
+
+					<div id="id" style="display:none;">
+						<p><input type="text" id="longname" placeholder="  Create an ID..." /></p>
+						<p style="color:black;"><a onClick="listlongnames()">FIND CHATROOMS</a>(<a id="skip3" onClick="tourl()">Next -></a>)</p>
+						<p><a class="button fit scrolly" onClick="createlongname()">SECRET & PASSWORD LISTS</a></p>
+						<p id="idresponse" style="color:black;font-weight:700;"></p>
+					</div>
+					</header>
+
+
+
+
+
+
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; SAFE-FS; <span id="buttbar"><a>WhiteOutMashups</a></span>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script type="text/javascript">
+			var auth = null;
+
+			
+
+			function authorize() {
+				const app =
+					{
+				    name: "SecretChat by SAFE-FS",
+				    id: "Secret1",
+				    version: "0.0.1",
+				    vendor:"WhiteOutMashups",
+				    permissions: ["SAFE_DRIVE_ACCESS"]
+					};
+					var loginbtn = document.getElementById("loginbtn");
+				safeAuth.authorise(app).then(function(response){
+					auth = response;
+					document.getElementById("auth").style.display="none";
+					document.getElementById("file").style.display="block";
+					document.getElementById("buttbar").innerHTML="Navigate to: <a onClick='toFolder()'>Chat</a> &#8226; <a onClick='toFiles()'>Rooms</a>"
+					//loginbtn.innerHTML = 'Authorized!';
+					//loginbtn.onclick = null;
+					var name = 'CURRENTCHATFILE';
+				safeNFS.getFile(auth.token,name).then(function(response){
+					document.getElementById('fileresponse').innerHTML = JSON.stringify(response);
+				});
+				});
+			};
+
+
+
+
+			function createorupdatefile(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var name = 'CURRENTCHATFILE';
+				var contennts = (document.getElementById('content').value).trim();
+				if(contennts==""){
+					alert('Please Enter some File Contents');
+					return;
+				}
+				var content = (document.getElementById('content').value).trim();
+				safeNFS.createOrUpdateFile(auth.token,name,content).then(function(response){
+					document.getElementById('fileresponse').innerHTML = '"'+(document.getElementById('content').value).trim()+'"';
+					var elems = document.getElementsByTagName("input");
+					var l = elems.length;
+						for (var i = 0; i < l; ++i){
+						  elems[i].value="";
+						}
+				},function(error){
+					//console.log(error);
+					document.getElementById('fileresponse').innerHTML = "Error Sending Message";
+				});
+			}
+
+
+
+			function getfile(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var name = 'CURRENTCHATFILE';
+				safeNFS.getFile(auth.token,name).then(function(response){
+					document.getElementById('skip2').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					document.getElementById('fileresponse').innerHTML = JSON.stringify(response);
+				},function(error){
+					document.getElementById('skip2').innerHTML ='<font color="black" style="font-weight:900; text-shadow: 2px 2px #FFFFFF;">NEXT -></font>';
+					document.getElementById('fileresponse').innerHTML = "Error: No Message Exists";
+				});
+			}
+
+
+
+			function deletefile(){
+				if(!auth){
+					alert('Please Login First');
+					return;
+				}
+				var name = (document.getElementById('filename').value).trim();
+				if(name==""){
+					alert('Please Enter a name');
+					return;
+				}
+				safeNFS.deleteFile(auth.token,name).then(function(response){
+					document.getElementById('fileresponse').innerHTML = "<font color='#228604'>Successfully Deleted: </font>" +name;
+				},function(error){
+					document.getElementById('fileresponse').innerHTML = "Error: File Already Deleted?";
+				});
+			}
+
+
+	</script>
+		<script>
+			window.onload = function() { document.body.className = ''; document.getElementById("auth").style.display="block"; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			function toFiles() {
+				document.getElementById("dir").style.display="none";
+				document.getElementById("id").style.display="none";
+				document.getElementById("url").style.display="none";
+				document.getElementById("file").style.display="block";
+			}
+			function toid() {
+				document.getElementById("dir").style.display="none";
+				document.getElementById("id").style.display="block";
+				document.getElementById("file").style.display="none";
+				document.getElementById("url").style.display="none";
+			}
+			function tourl() {
+				document.getElementById("dir").style.display="none";
+				document.getElementById("id").style.display="none";
+				document.getElementById("file").style.display="none";
+				document.getElementById("url").style.display="block";
+			}
+			function toFolder() {
+				document.getElementById("dir").style.display="block";
+				document.getElementById("id").style.display="none";
+				document.getElementById("url").style.display="none";
+				document.getElementById("file").style.display="none";
+			}
+		</script>
+	</body>
+</html>
