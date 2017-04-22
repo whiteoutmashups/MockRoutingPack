@@ -9,6 +9,6 @@ It comes with:
  - SAFE Demo App 0.6.2 for uploading sites / files
  - and 5 SAFE Web Apps for you to upload and try out!
  
- Have fun, and enjoy!! SAFE :D :D
- 
  (LINUX ONLY RIGHT NOW!!!)
+ 
+ Enjoy!
