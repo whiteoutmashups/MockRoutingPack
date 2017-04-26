@@ -1,0 +1,26 @@
+
+Welcome to SAFE!!
+
+These are "Web Apps," or basically websites that act like apps.
+
+You can use them in the SAFE Network Browser, included in this package.
+
+To use these apps, first open the SAFE Launcher v11 folder and use the Launcher to make an account. When it asks you for an "Invitation Token," feel free to type whatever you want.
+
+Then once you are logged in, open the "SAFE Demo App 0.6.2" folder and run that program. Then click on "Mangage Network Data" (left button) and click on "Public Data" (bottom). 
+
+Then you can upload things to your fake SAFE Network! :) Click "Upload Directory" and upload one of these app folders, like "APP ZERO," "SAFEtube" or whatever you want to use.
+
+After you uploaded it, click "Back" arrow on the demo app and then go to "Manage Websites" (right button). Now you can create a name for yourself, and then click "Create Website." Once you have done that, it will ask you to click on a folder in your "Public" data. 
+
+Click on your folder in the "Demo App" and now your folder is on the network and has a network name like "safe://yourwebsite.yourID"
+
+So open the "SAFE Browser 0.4.3" folder and then go to that URL ("safe://yourwebsite.yourID," whatever it really is) and you can see the website!!
+
+That's how you use Web Apps on SAFE!!!
+
+Very easy!! Now try changing the code, reuploading, and seeing the changes!!
+
+You can also now make your own Web Apps!!
+
+Enjoy!! :D
