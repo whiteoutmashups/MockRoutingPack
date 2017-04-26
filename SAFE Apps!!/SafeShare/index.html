@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" href="./favicon/16px.png" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="./favicon/32px.png" sizes="32x32" type="image/png">
+    <link rel="shortcut icon" href="./favicon/64px.png" sizes="64x64" type="image/png">
+    <link rel="shortcut icon" href="./favicon/128px.png" sizes="128x128" type="image/png">
+    <title>Safeshare</title>
+    <link rel="stylesheet" href="./css/safeshare.css">
+    <script>
+        window.onunload = function () {}
+    </script>
+    <link rel="stylesheet" href="./deps/hybrid.min.css">
+    <script src="./deps/highlight.min.js"></script>
+    <script src="./deps/jquery-2.2.2.min.js"></script>
+    <script src="./deps/index.js"></script>
+     
+    </head>
+<body>
+    <div class="modulecontent modulearea"></div>
+    
+    <div id="waiting" class="centerable">
+		
+		<div id="noauth" class="hidden">Access denied<br>Launcher has denied access.</div>
+		<div id="waitauth" class="hidden">Waiting for Authorisation<br><br>
+		Please check the SAFE Launcher and grant access to the Safeshare application.<br><br><br><img src="wait.png" ></div>
+		<div id="nolauncher" class="hidden">Unable to connect to the Safe Launcher.<br>
+		Please make sure it is running and refresh this page.<br><br><br><img src="wait.png" ></div>
+		<div id="waitnet" class="waiting">Connecting...<br><br>
+		Please wait.<br><br><br><img src="wait.png" ></div>	
+		<div id="canceled" class="hidden">You chose not to agree with the terms...<br><br>Thank you for visiting.</div>		    
+	    </div>
+    </div> 
+
+    <noscript class="noscript">
+            <h2>
+                    SafeShare requires that Javascript be enabled to view and upload files.
+            </h2>
+    </noscript>
+    <div id="footer" class="footer">
+		<!-- as soon as it is cleaned up <a href="http://safe.share.safenet/###source_link###" target="_blank">Source Code</a><br>  soon -->
+		<span class="droptft" ><a href="bitcoin:148b6oSDnztvriYp9nMvqf2SL4KjJc5wnK" target="_blank">Donate : 148b6oSDnztvriYp9nMvqf2SL4KjJc5wnK</a><span><img src="donate.png"/><br/></span></span><br>
+		</div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

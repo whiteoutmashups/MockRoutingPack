@@ -1,0 +1,67 @@
+{
+  "name": "ghost-in-the-safe",
+  "version": "0.7.0",
+  "description": "Ghost in the (Maid)Safe is a browser-side-only ghost-themes CMS for the maidsafe network",
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile",
+    "dev": "webpack-dev-server --progress --profile --watch --hot",
+    "preinstall": "cd lib/browserfs; npm install",
+    "postinstall": "npm install lib/statical-ghost lib/browserfs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ligthyear/ghost-in-the-safe.git"
+  },
+  "keywords": [
+    "maidsafe",
+    "ghost",
+    "cms",
+    "content-management",
+    "content-management-system",
+    "browser"
+  ],
+  "author": "Benjamin Kampmann ( https://github.com/ligthyear )",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ligthyear/ghost-in-the-safe/issues"
+  },
+  "homepage": "https://github.com/ligthyear/ghost-in-the-safe#readme",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-es2015-native-modules": "^6.6.0",
+    "babel-preset-react": "^6.11.1",
+    "buffer": "^4.9.0",
+    "buffer-loader": "0.0.1",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7"
+  },
+  "dependencies": {
+    "awesome-typescript-loader": "^0.17.0",
+    "bfs-buffer": "^0.1.7",
+    "bfs-path": "^0.1.2",
+    "bfs-process": "^0.1.6",
+    "glob": "^7.0.3",
+    "handlebars": "^4.0.5",
+    "jszip": "^3.0.0",
+    "lodash": "^3.10.1",
+    "moment": "^2.13.0",
+    "muicss": "^0.5.9",
+    "react": "^15.0.2",
+    "react-datepicker": "^0.27.0",
+    "react-dom": "^15.0.2",
+    "react-modal": "^1.4.0",
+    "react-progressbar": "^1.2.0",
+    "safenet": "0.0.1",
+    "ts-loader": "^0.8.2",
+    "tweetnacl": "^0.14.3",
+    "typescript": "^1.8.10"
+  }
+}

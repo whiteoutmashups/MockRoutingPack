@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	@ajlkn
+-->
+<html>
+<head>
+	<title>SAFE-FS Droplet Net3</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" href="images/log5.ico" type="image/x-icon"/>
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<script>
+		var Safe = null;
+	</script>
+</head>
+<body id="top">
+
+	<!-- Profile -->
+	<header id="header">
+		<a href="#" class="image avatar"><img src="images/log5.png" alt="" /></a>
+		<h1><strong>Welcome __<u>user</u>__</strong>, to<br />
+			TestWeb demo page,<br />
+			date is <a href="http://safe-fs.io">dd/mm/yy</a>.</h1>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Search -->
+					<!--section id="one">
+						<header class="major">
+							<h2>Search</h2>
+						</header>
+						<p>Search for public files</p>
+						<input type="text" placeholder="Search..." /><br>
+						<ul class="actions">
+							<li><a href="#" class="button">Search</a></li>
+						</ul>
+					</section-->
+					<section>
+						<button type="button" class="button special" onClick="initialize(this)" id="initializeButton">Initialize Safe Instance</button>
+						<p id="initializeArea" class="result-area"></p>
+						<button type="button" class="button special" onClick="authorize(this)" id="authorizeButton">Authorize</button>
+						<p id="authorizeArea" class="result-area"></p>
+						<button type="button" class="button special" onClick="deauthorize(this)">Revoke Authorization</button>
+						<p id="deauthorizeArea" class="result-area"></p>
+						<p><b>(Use this demo Web App with the Stable Droplet Test Network's <a href="https://github.com/maidsafe/safe_launcher/releases/tag/0.4.5" target="_blank">SAFE Launcher 0.4.5</a>)</b></p>
+					</section>
+					<!-- Two -->
+					<section id="two">
+						<h2>Test Hosted Files</h2>
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/thumbs/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Magna sed consequat tempus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/thumbs/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Ultricies lacinia interdum</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/thumbs/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/thumbs/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/thumbs/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Nunc enim commodo aliquet</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/thumbs/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Risus ornare lacinia</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+						</div>
+					</section>
+
+					<!-- Three -->
+					<section id="three">
+						<h2>Upload Files</h2>
+						<p>Use this form to upload your image files.</p>
+						<div class="row" style="width:100%">
+							<div class="8u 12u$(small)" style="width:100%">
+								<form method="post" action="#">
+									<div class="row uniform 50%" style="width:100%">
+										<div class="6u 12u$(xsmall)" style="width:50%"><input type="text" name="name" id="name" placeholder="File Name..." /></div>
+										<div class="6u$ 12u$(xsmall)" style="width:50%"><input type="email" name="email" id="email" placeholder="Cost..." /></div>
+										<div class="12u$" style="width:100%"><textarea name="message" id="message" placeholder="Description..." rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Upload Image" /></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>TestWeb App: <a>Demo Page</a></li>
+				</ul>
+			</footer>
+			<!-- Load the API library -->
+			<script src="./lib/index.js"></script>
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+
+			<script>
+				function initialize(node) {
+					Safe = new SafeApp({
+						id: 'com.test.web',
+						name: 'SAFE-FS Droplet Network',
+						vendor: 'SAFE-FS',
+						version: '0.0.1'
+                }, ['SAFE_DRIVE_ACCESS']); // include SAFEDrive access
+
+					node.nextElementSibling.innerHTML = 'Initialized a new Safe instance. You can authenticate now.';
+				}
+				function authorize(node) {
+					Safe.auth.authenticate().then(function() {
+						node.nextElementSibling.innerHTML = 'Authorized successfully.';
+					}, addError.bind(null, node.nextElementSibling)).then(finalize.bind(null, node.nextElementSibling));
+				}
+				function deauthorize(node) {
+					Safe.auth.deauthorize().then(function() {
+						node.nextElementSibling.innerHTML = 'Unauthorized.';
+					}, addError.bind(null, node.nextElementSibling)).then(finalize.bind(null, node.nextElementSibling));
+				}
+				SafeApp.log = console.log.bind(console);
+
+				var Safe = null;
+
+				function addError(element, error) {
+					console.log(error.toString());
+
+					element.innerHTML = error.message;
+				}
+			</script>
+
+		</body>
+		</html>
