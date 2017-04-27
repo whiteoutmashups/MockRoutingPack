@@ -9,6 +9,4 @@ It comes with:
  - SAFE Demo App 0.6.2 for uploading sites / files
  - and ALL 23 SAFE Web Apps for you to upload and try out!
  
- (WINDOWS COMING SOON!!!)
- 
  Enjoy!
