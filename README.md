@@ -7,7 +7,7 @@ It comes with:
  - Modified "Mock-Routing" Launcher v11
  - SAFE Beaker Browser by joshuef
  - SAFE Demo App 0.6.2 for uploading sites / files
- - and 5 SAFE Web Apps for you to upload and try out!
+ - and ALL 23 SAFE Web Apps for you to upload and try out!
  
  (WINDOWS COMING SOON!!!)
  
