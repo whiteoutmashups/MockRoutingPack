@@ -65,7 +65,7 @@ cargo build --release --features use-mock-routing
 popd
 
 BUILD_OUTPUT=$(find safe_client_libs -type f -name 'libsafe_core.*'\
-                   | grep -E "libsafe_core\.(so|dynlib)"\
+                   | grep -E "libsafe_core\.(so|dylib)"\
                    | grep -v "deps")
 
 echo "Copying build output file: ${BUILD_OUTPUT} into the launcher directory"
