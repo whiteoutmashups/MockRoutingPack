@@ -1,0 +1,6 @@
+[submodule "safe_launcher"]
+	path = safe_launcher
+	url = git@github.com:maidsafe/safe_launcher.git
+[submodule "safe_client_libs"]
+	path = safe_client_libs
+	url = git@github.com:maidsafe/safe_client_libs.git
