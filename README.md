@@ -9,4 +9,10 @@ It comes with:
  - SAFE Demo App 0.6.2 for uploading sites / files
  - and ALL 23 SAFE Web Apps for you to upload and try out!
  
+Use these links to only download the files for your OS:
+ - <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/wgallo3/MockRoutingPack/tree/master/For%20WINDOWS!!">Windows Download</a>
+ - <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/wgallo3/MockRoutingPack/tree/master/For%20LINUX">Linux Download</a>
+ - <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/wgallo3/MockRoutingPack/tree/master/For%20MAC%20OS">Mac OS Download</a>
+ - <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/wgallo3/MockRoutingPack/tree/master/SAFE%20Apps!!">SAFE APPS!! Folder Download</a>
+ 
  Enjoy!
